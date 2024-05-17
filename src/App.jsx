@@ -20,8 +20,6 @@ import JumpStart from './JumpStart';
 import LocknutWheel from './LocknutWheel';
 import MobileBreakdown from './MobileBreakdown';
 import RegisterPage from './register';
-// import aos from 'aos';
-// import 'aos/dist/aos.css';
 import ScrollToTop from "react-scroll-to-top";
 
 const App = () => {

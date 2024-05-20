@@ -59,13 +59,15 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
                 <h2 className='text-success'>{headingTwo}</h2>
                 <p>{paraTwo}</p>
                 <div className="d-flex justify-content-center align-items-center">
-                <Button
-                  variant="primary"
-                  type="submit"
-                  className="mt-3 btn btn-success"
-                >
-                  Contact Us
-                </Button>
+                <Link to='/contact'>
+                    <Button
+                    variant="primary"
+                    type="submit"
+                    className="mt-3 btn btn-success"
+                    >
+                    Contact Us
+                    </Button>
+                </Link>
               </div>
             </Col>
         </Row>

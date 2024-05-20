@@ -118,6 +118,7 @@ function ContactPage() {
                   type="text"
                   name="name"
                   placeholder="Enter your name"
+                  required
                 />
               </Form.Group>
               <Form.Group controlId="formEmail">
@@ -126,6 +127,7 @@ function ContactPage() {
                   type="email"
                   name="email"
                   placeholder="Enter your email"
+                  required
                 />
               </Form.Group>
               <Form.Group controlId="formMessage">
@@ -135,6 +137,7 @@ function ContactPage() {
                   name="message"
                   rows={5}
                   placeholder="Enter your message"
+                  required
                 />
               </Form.Group>
               <div className="d-flex justify-content-center align-items-center">

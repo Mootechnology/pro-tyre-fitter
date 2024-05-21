@@ -64,10 +64,10 @@ function ContactPage() {
   return (
     <div>
       <Helmet>
-        <title>contact Us - Tyre Sdsaite</title>
+        <title>Contact Us - Expert Tyre Services in London</title>
         <meta
           name="description"
-          content="About Us at Tyre Site - Learn about our services and commitment."
+          content="Get in touch with us for professional tyre services in London. Whether it's fitting, repair, replacement, or more, we've got you covered. Reach out today!"
         />
       </Helmet>
       {/* Banner Section */}

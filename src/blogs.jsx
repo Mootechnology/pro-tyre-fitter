@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; 
+import { Helmet } from "react-helmet";
 
 const blogPosts = [
   {
@@ -44,6 +45,13 @@ function BlogPage() {
 
   return (
     <div>
+      <Helmet>
+        <title>Car Care Insights: Top Tips & Advice for Vehicle Owners</title>
+        <meta
+          name="description"
+          content="Explore our blog for expert car care tips, maintenance advice, and repair guides. Stay updated with the latest insights to keep your vehicle in top condition."
+        />
+      </Helmet>
       {/* Banner Section */}
       <header className='headerStyle'>
         <h1>Blogs</h1>

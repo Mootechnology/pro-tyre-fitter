@@ -10,11 +10,19 @@ import {
 } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
 import logo from './assets/images/logo2.png';
+import { Helmet } from "react-helmet";
 
 export default function WithContactForm() {
   return (
-
     <>
+
+      <Helmet>
+        <title>Frequently Asked Questions - Tyre Services in London</title>
+        <meta
+          name="description"
+          content="Find answers to common queries about our tyre services in London. From fitting to repair, get all the information you need in our FAQs section."
+        />
+      </Helmet>
       {/* Banner Section */}
       <header className='headerStyle'>
         <h1>Faq Page</h1>

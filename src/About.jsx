@@ -36,10 +36,10 @@ function About() {
   return (
     <div>
       <Helmet>
-        <title>About Us - Tyre Sdsaite</title>
+        <title>Expert Tyre Services in London - Tyre Fitting, Repair & More</title>
         <meta
           name="description"
-          content="About Us at Tyre Site - Learn about our services and commitment."
+          content="Discover our comprehensive tyre services in London, including fitting, repair, replacement, and more. Trust our expertise for all your tyre needs."
         />
       </Helmet>
       {/* Banner Section */}

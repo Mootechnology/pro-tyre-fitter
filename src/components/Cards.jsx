@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import $ from 'jquery';
-import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
-import styles from './Cards.module.css';
+import React, { useState, useEffect } from "react";
+import $ from "jquery";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+import styles from "./Cards.module.css";
 
 const Cards = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -14,7 +14,10 @@ const Cards = () => {
 
       if (scrollPosition < carouselWidth - cardWidth * 4) {
         setScrollPosition(scrollPosition + cardWidth);
-        $(".carousel-inner").animate({ scrollLeft: scrollPosition + cardWidth }, 600);
+        $(".carousel-inner").animate(
+          { scrollLeft: scrollPosition + cardWidth },
+          600
+        );
       }
     };
 
@@ -23,7 +26,10 @@ const Cards = () => {
 
       if (scrollPosition > 0) {
         setScrollPosition(scrollPosition - cardWidth);
-        $(".carousel-inner").animate({ scrollLeft: scrollPosition - cardWidth }, 600);
+        $(".carousel-inner").animate(
+          { scrollLeft: scrollPosition - cardWidth },
+          600
+        );
       }
     };
 
@@ -39,29 +45,63 @@ const Cards = () => {
 
   // Example data for cards
   const cardData = [
-    { title: "Mobile tyre fitting", text: "Ensure the safety of your journey with mobile tyre fitting.", image: "/images/Mobile tyre fitting.png", path: "/services/mobile-tyre-fitting" },
-    { title: "Mobile Tyre Repair", text: "Get your tyres repaired with a mobile tyre repair service.", image: "/images/Mobile Tyre Repair.png", path: "/services/mobile-tyre-repair" },
-    { title: "Tyre replacement", text: "Replace the weak and damaged tyre with a new one.", image: "/images/Tyre replacement.png", path: "/services/tyre-replacement" },
-    { title: "Flat tyres", text: "Protect your tyres from the problem of tyre getting flat.", image: "/images/Flat tyres.png", path: "/services/flat-tyre" },
-    ];
+    {
+      title: "Mobile tyre fitting",
+      text: "Ensure the safety of your journey with mobile tyre fitting.",
+      image: "/images/Mobile tyre fitting.png",
+      path: "/services/mobile-tyre-fitting",
+    },
+    {
+      title: "Mobile Tyre Repair",
+      text: "Get your tyres repaired with a mobile tyre repair service.",
+      image: "/images/Mobile Tyre Repair.png",
+      path: "/services/mobile-tyre-repair",
+    },
+    {
+      title: "Tyre replacement",
+      text: "Replace the weak and damaged tyre with a new one.",
+      image: "/images/Tyre replacement.png",
+      path: "/services/tyre-replacement",
+    },
+    {
+      title: "Flat tyres",
+      text: "Protect your tyres from the problem of tyre getting flat.",
+      image: "/images/Flat tyres.png",
+      path: "/services/flat-tyre",
+    },
+  ];
 
   return (
     <>
-      <div id="carouselExampleControls" className={`carousel ${styles.carousel}`}>
-        <div className={`carousel-inner ${styles['carousel-inner']}`}>
+      <div
+        id="carouselExampleControls"
+        className={`carousel ${styles.carousel}`}
+      >
+        <div className={`carousel-inner ${styles["carousel-inner"]}`}>
           {cardData.map((card, index) => (
-            <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''} ${styles['carousel-item']}`}>
+            <div
+              key={index}
+              className={`carousel-item ${index === 0 ? "active" : ""} ${
+                styles["carousel-item"]
+              }`}
+            >
               <div className={`card ${styles.card}`}>
-                <div className={`img-wrapper cards-image ${styles['img-wrapper']}`}>
-                  <img src={card.image} alt="card"/>
+                <div
+                  className={`img-wrapper cards-image ${styles["img-wrapper"]}`}
+                >
+                  <img src={card.image} alt="card" />
                 </div>
-                
-                <div className={`card-body ${styles['card-body']}`}>
-                  <h5 className={`card-title ${styles['card-title']}`}>{card.title}</h5>
-                  <p className={`card-text ${styles['card-text']}`}>{card.text}</p>
-                
+
+                <div className={`card-body ${styles["card-body"]}`}>
+                  <h4 className={`card-title ${styles["card-title"]}`}>
+                    {card.title}
+                  </h4>
+                  <p className={`card-text ${styles["card-text"]}`}>
+                    {card.text}
+                  </p>
+
                   <Link to={card.path}>
-                   <Button variant="success mt-3 px-4">Learn More</Button>
+                    <Button variant="success mt-3 px-4">Learn More</Button>
                   </Link>
                 </div>
               </div>
@@ -69,21 +109,27 @@ const Cards = () => {
           ))}
         </div>
         <button
-          className={`carousel-control-prev bg-success ${styles['carousel-control-prev']}`}
+          className={`carousel-control-prev bg-success ${styles["carousel-control-prev"]}`}
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="prev"
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className={`carousel-control-next bg-success ${styles['carousel-control-next']}`}
+          className={`carousel-control-next bg-success ${styles["carousel-control-next"]}`}
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="next"
         >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>

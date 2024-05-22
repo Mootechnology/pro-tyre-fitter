@@ -1,14 +1,42 @@
 import React, { useEffect } from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 
 const BurstTyre = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update meta title and description when route changes
+    if (location.pathname === "/services/burst-tyre") {
+      document.title =
+        "Fix Burst Tyres Now - Call for Fast & Reliable Service!";
+      const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      if (ogTitleMeta) {
+        ogTitleMeta.setAttribute(
+          "content",
+          "Fix Burst Tyres Now - Call for Fast & Reliable Service!"
+        );
+      }
+      const descriptionMeta = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (descriptionMeta) {
+        descriptionMeta.setAttribute(
+          "content",
+          "Get immediate assistance for burst tyres. Fast, reliable service available 24/7 to get you back on the road quickly and safely. Call us now!"
+        );
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <Helmet>
-        <title>Fix Burst Tyres Now - Call for Fast & Reliable Service!</title>
+        <title id="meta-title">Fix Burst Tyres Now - Call for Fast & Reliable Service!</title>
         <meta
           name="description"
+          id="meta-description"
           content="Get immediate assistance for burst tyres. Fast, reliable service available 24/7 to get you back on the road quickly and safely. Call us now!"
         />
       </Helmet>

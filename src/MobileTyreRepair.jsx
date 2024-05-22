@@ -1,8 +1,34 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 
 const MobileTyreRepair = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update meta title and description when route changes
+    if (location.pathname === "/services/mobile-tyre-repair") {
+      document.title = "Tyre Repair Near Me | Find the Best Tyre Repair Service";
+      const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      if (ogTitleMeta) {
+        ogTitleMeta.setAttribute(
+          "content",
+          "Tyre Repair Near Me | Find the Best Tyre Repair Service"
+        );
+      }
+      const descriptionMeta = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (descriptionMeta) {
+        descriptionMeta.setAttribute(
+          "content",
+          "Need professional tyre repair services near you? Look no further! Expert tyre repair near you in London! Quick and Reliable Service"
+        );
+      }
+    }
+  }, [location]);
   return (
     <>
       <Helmet>

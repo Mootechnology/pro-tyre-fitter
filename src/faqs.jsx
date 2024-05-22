@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, {useEffect} from "react";
 import {
   MDBBtn,
   MDBCol,
@@ -11,15 +11,43 @@ import {
 import { Link } from "react-router-dom";
 import logo from './assets/images/logo2.png';
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function WithContactForm() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update meta title and description when route changes
+    if (location.pathname === "/faq") {
+      document.title = "Frequently Asked Questions - Tyre Services in London";
+      const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      if (ogTitleMeta) {
+        ogTitleMeta.setAttribute(
+          "content",
+          "Frequently Asked Questions - Tyre Services in London"
+        );
+      }
+      const descriptionMeta = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (descriptionMeta) {
+        descriptionMeta.setAttribute(
+          "content",
+          "Find answers to common queries about our tyre services in London. From fitting to repair, get all the information you need in our FAQs section."
+        );
+      }
+    }
+  }, [location]);
   return (
     <>
+    
 
       <Helmet>
-        <title>Frequently Asked Questions - Tyre Services in London</title>
+        <title id="meta-title">Frequently Asked Questions - Tyre Services in London</title>
         <meta
           name="description"
+          id="meta-description"
           content="Find answers to common queries about our tyre services in London. From fitting to repair, get all the information you need in our FAQs section."
         />
       </Helmet>

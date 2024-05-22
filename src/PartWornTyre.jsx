@@ -1,8 +1,33 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import ServicePage from './ServicePage'
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 
 const PartWornTyre = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update meta title and description when route changes
+    if (location.pathname === "/services/part-worn-tyre") {
+      document.title = "Quality Part Worn Tyres - Affordable & Reliable Options";
+      const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      if (ogTitleMeta) {
+        ogTitleMeta.setAttribute(
+          "content",
+          "Quality Part Worn Tyres - Affordable & Reliable Options"
+        );
+      }
+      const descriptionMeta = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (descriptionMeta) {
+        descriptionMeta.setAttribute(
+          "content",
+          "Find top-quality part worn tyres at affordable prices. Reliable, inspected tyres for safe driving. Check our range and save on your next tyre purchase today!"
+        );
+      }
+    }
+  }, [location]);
   return (
     <>
           <Helmet>

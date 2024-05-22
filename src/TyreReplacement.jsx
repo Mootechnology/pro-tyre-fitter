@@ -1,14 +1,41 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import ServicePage from './ServicePage'
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 
 const TyreReplacement = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update meta title and description when route changes
+    if (location.pathname === "/services/tyre-replacement") {
+      document.title = "London Mobile Tyre Replacement | Fast Service";
+      const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      if (ogTitleMeta) {
+        ogTitleMeta.setAttribute(
+          "content",
+          "London Mobile Tyre Replacement | Fast Service"
+        );
+      }
+      const descriptionMeta = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (descriptionMeta) {
+        descriptionMeta.setAttribute(
+          "content",
+          "Don’t wait! Our expert mobile tyre replacement service in London ensures quick, reliable, and hassle-free solutions. Get back on the road confidently."
+        );
+      }
+    }
+  }, [location]);
+
   return (
     <>
     <Helmet>
-        <title>London Mobile Tyre Replacement | Fast Service</title>
+        <title id='meta-title'>London Mobile Tyre Replacement | Fast Service</title>
         <meta
           name="description"
+          id='meta-description'
           content="Don’t wait! Our expert mobile tyre replacement service in London ensures quick, reliable, and hassle-free solutions. Get back on the road confidently."
         />
       </Helmet>

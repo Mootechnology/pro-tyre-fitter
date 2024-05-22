@@ -10,12 +10,12 @@ const MobileTyreFitting = () => {
     // Update meta title and description when route changes
     if (location.pathname === "/services/mobile-tyre-fitting") {
       document.title =
-        "Mobile Tyre Fitting London - Mobile Tyre Fitting near me";
+        "London’s On-Demand Mobile Tyre Fitting Service | Book Now";
       const ogTitleMeta = document.querySelector('meta[property="og:title"]');
       if (ogTitleMeta) {
         ogTitleMeta.setAttribute(
           "content",
-          "Mobile Tyre Fitting London - Mobile Tyre Fitting near me"
+          "London’s On-Demand Mobile Tyre Fitting Service | Book Now"
         );
       }
       const descriptionMeta = document.querySelector(
@@ -24,7 +24,7 @@ const MobileTyreFitting = () => {
       if (descriptionMeta) {
         descriptionMeta.setAttribute(
           "content",
-          "Pro Tyre Fitters provides Mobile Tyre Fitting Services in London. We come to your location and handle all your tyre fitting needs quickly. Call us now!"
+          "Don’t waste time searching for a car tyre fitting shop—our professional mobile service comes to you! Get back on the road Fastly."
         );
       }
     }
@@ -32,9 +32,10 @@ const MobileTyreFitting = () => {
   return (
     <>
       <Helmet>
-        <title>London’s On-Demand Mobile Tyre Fitting Service | Book Now</title>
+        <title id="meta-title">London’s On-Demand Mobile Tyre Fitting Service | Book Now</title>
         <meta
           name="description"
+          id="meta-description"
           content="Don’t waste time searching for a car tyre fitting shop—our professional mobile service comes to you! Get back on the road Fastly."
         />
       </Helmet>

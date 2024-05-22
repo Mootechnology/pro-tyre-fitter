@@ -14,12 +14,12 @@ function ContactPage() {
   useEffect(() => {
     // Update meta title and description when route changes
     if (location.pathname === "/contact") {
-      document.title = "Contact Us - Tyre Site";
+      document.title = "Contact Us - Expert Tyre Services in London";
       const ogTitleMeta = document.querySelector('meta[property="og:title"]');
       if (ogTitleMeta) {
         ogTitleMeta.setAttribute(
           "content",
-          "Contact Us at Tyre Site - Learn contact our services and commitment."
+          "Contact Us - Expert Tyre Services in London"
         );
       }
       const descriptionMeta = document.querySelector(
@@ -28,7 +28,7 @@ function ContactPage() {
       if (descriptionMeta) {
         descriptionMeta.setAttribute(
           "content",
-          "Contact Us at Tyre Site - Learn contact our services and commitment."
+          "Get in touch with us for professional tyre services in London. Whether it's fitting, repair, replacement, or more, we've got you covered. Reach out today!"
         );
       }
     }
@@ -64,9 +64,10 @@ function ContactPage() {
   return (
     <div>
       <Helmet>
-        <title>Contact Us - Expert Tyre Services in London</title>
+        <title id="meta-title">Contact Us - Expert Tyre Services in London</title>
         <meta
           name="description"
+          id="meta-description"
           content="Get in touch with us for professional tyre services in London. Whether it's fitting, repair, replacement, or more, we've got you covered. Reach out today!"
         />
       </Helmet>

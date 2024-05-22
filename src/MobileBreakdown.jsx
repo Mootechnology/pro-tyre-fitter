@@ -1,15 +1,44 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 
 const MobileBreakdown = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update meta title and description when route changes
+    if (location.pathname === "/services/mobile-breakdown") {
+      document.title =
+        "Find Affordable Breakdown Recovery Services Near You - Call now";
+      const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      if (ogTitleMeta) {
+        ogTitleMeta.setAttribute(
+          "content",
+          "Find Affordable Breakdown Recovery Services Near You - Call now"
+        );
+      }
+      const descriptionMeta = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (descriptionMeta) {
+        descriptionMeta.setAttribute(
+          "content",
+          "Looking for reliable and affordable breakdown recovery services? Look no further! Pro Tyre Fitters provides top-notch assistance. Call Us Now"
+        );
+      }
+    }
+  }, [location]);
+
+  
   return (
     <>
       <Helmet>
-        <title>Breakdown Recovery Near Me - 24/7 Emergency Assistance</title>
+        <title id="meta-title">Find Affordable Breakdown Recovery Services Near You - Call now</title>
         <meta
           name="description"
-          content="Round Tyres provide fast and reliable breakdown recovery services near you. Our experienced team of specialists are available 24/7 to quickly respond."
+          id="meta-description"
+          content="Looking for reliable and affordable breakdown recovery services? Look no further! Pro Tyre Fitters provides top-notch assistance. Call Us Now"
         />
       </Helmet>
       <ServicePage

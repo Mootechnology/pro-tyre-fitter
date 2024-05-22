@@ -1,15 +1,41 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 
 const JumpStart = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update meta title and description when route changes
+    if (location.pathname === "/services/jumpstart") {
+      document.title = "Quick Jump Start Car Service - Available 24/7 Near You";
+      const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      if (ogTitleMeta) {
+        ogTitleMeta.setAttribute(
+          "content",
+          "Quick Jump Start Car Service - Available 24/7 Near You"
+        );
+      }
+      const descriptionMeta = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (descriptionMeta) {
+        descriptionMeta.setAttribute(
+          "content",
+          "Need a jump start? Our 24/7 car service provides fast and reliable jump starts to get you back on the road quickly. Call us anytime for immediate help!"
+        );
+      }
+    }
+  }, [location]);
   return (
     <>
       <Helmet>
-        <title>Jump Start Service 24/7 - Car Jump Start Service London</title>
+        <title>Quick Jump Start Car Service - Available 24/7 Near You</title>
         <meta
           name="description"
-          content="Need an emergency jump start? Look no further! Our 24/7 jump start service is available near you to help get your car started quickly, safely, and hassle-free."
+          content="Need a jump start? Our 24/7 car service provides fast and reliable jump starts to get you back on the road quickly. Call us anytime for immediate help!"
         />
       </Helmet>
       <ServicePage

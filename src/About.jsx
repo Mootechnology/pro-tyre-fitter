@@ -13,12 +13,12 @@ function About() {
   useEffect(() => {
     // Update meta title and description when route changes
     if (location.pathname === "/about") {
-      document.title = "About Us - Tyre Site";
+      document.title = "Expert Tyre Services in London - Tyre Fitting, Repair & More";
       const ogTitleMeta = document.querySelector('meta[property="og:title"]');
       if (ogTitleMeta) {
         ogTitleMeta.setAttribute(
           "content",
-          "About Us at Tyre Site - Learn about our services and commitment."
+          "Expert Tyre Services in London - Tyre Fitting, Repair & More"
         );
       }
       const descriptionMeta = document.querySelector(
@@ -27,7 +27,7 @@ function About() {
       if (descriptionMeta) {
         descriptionMeta.setAttribute(
           "content",
-          "About Us at Tyre Site - Learn about our services and commitment."
+          "Discover our comprehensive tyre services in London, including fitting, repair, replacement, and more. Trust our expertise for all your tyre needs."
         );
       }
     }
@@ -36,9 +36,10 @@ function About() {
   return (
     <div>
       <Helmet>
-        <title>Expert Tyre Services in London - Tyre Fitting, Repair & More</title>
+        <title id="meta-title">Expert Tyre Services in London - Tyre Fitting, Repair & More</title>
         <meta
           name="description"
+          id="meta-description"
           content="Discover our comprehensive tyre services in London, including fitting, repair, replacement, and more. Trust our expertise for all your tyre needs."
         />
       </Helmet>

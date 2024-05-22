@@ -10,12 +10,12 @@ const FlatTyre = () => {
     // Update meta title and description when route changes
     if (location.pathname === "/services/flat-tyre") {
       document.title =
-        "Jump Start Service 24/7 - Car Jump Start Service London";
+        "Solve Your Car Troubles with Our Reliable Flat Tyre Repair Services";
       const ogTitleMeta = document.querySelector('meta[property="og:title"]');
       if (ogTitleMeta) {
         ogTitleMeta.setAttribute(
           "content",
-          "Jump Start Service 24/7 - Car Jump Start Service London"
+          "Solve Your Car Troubles with Our Reliable Flat Tyre Repair Services"
         );
       }
       const descriptionMeta = document.querySelector(
@@ -24,7 +24,7 @@ const FlatTyre = () => {
       if (descriptionMeta) {
         descriptionMeta.setAttribute(
           "content",
-          "Need an emergency jump start? Look no further! Our 24/7 jump start service is available near you to help get your car started quickly, safely, and hassle-free."
+          "Expert flat tyre repair in London. Trust our experienced technicians to fix your car troubles in no time. Contact us today!"
         );
       }
     }
@@ -32,10 +32,11 @@ const FlatTyre = () => {
   return (
     <>
       <Helmet>
-        <title>Jump Start Service 24/7 - Car Jump Start Service London</title>
+        <title id="meta-title">Solve Your Car Troubles with Our Reliable Flat Tyre Repair Services</title>
         <meta
           name="description"
-          content="Need an emergency jump start? Look no further! Our 24/7 jump start service is available near you to help get your car started quickly, safely, and hassle-free."
+          id="meta-description"
+          content="Expert flat tyre repair in London. Trust our experienced technicians to fix your car troubles in no time. Contact us today!"
         />
       </Helmet>
       <ServicePage

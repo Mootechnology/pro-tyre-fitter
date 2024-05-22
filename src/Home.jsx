@@ -20,12 +20,12 @@ const Home = () => {
     // Update meta title and description when route changes
     if (location.pathname === "/") {
       document.title =
-        "24 Hour Mobile Tyre Fitting near me - Tyre Fitting London";
+        "London Mobile Tyre Fitting | 24-Hour Mobile Tyre Service";
       const ogTitleMeta = document.querySelector('meta[property="og:title"]');
       if (ogTitleMeta) {
         ogTitleMeta.setAttribute(
           "content",
-          "24 Hour Mobile Tyre Fitting near me - Tyre Fitting London"
+          "London Mobile Tyre Fitting | 24-Hour Mobile Tyre Service"
         );
       }
       const descriptionMeta = document.querySelector(
@@ -34,21 +34,23 @@ const Home = () => {
       if (descriptionMeta) {
         descriptionMeta.setAttribute(
           "content",
-          "Need a tyre fitting urgently? Our 24 hour tyre service London gives you the convenience and peace of mind you need. Fast, reliable service Call now for on-the-spot assistance!"
+          "Expert mobile tyre fitting in London. Convenient, reliable, and efficient service. Get back on the road ASAP. Call us now!"
         );
       }
     }
   }, [location]);
   return (
     <>
-      <CarouselPage />
-      <Helmet>
-        <title>24 Hour Mobile Tyre Fitting near me - Tyre Fitting London</title>
+    <Helmet>
+        <title id="meta-title">London Mobile Tyre Fitting | 24-Hour Mobile Tyre Service</title>
         <meta
           name="description"
-          content="Need a tyre fitting urgently? Our 24 hour tyre service London gives you the convenience and peace of mind you need. Fast, reliable service Call now for on-the-spot assistance!"
+          id="meta-description"
+          content="Expert mobile tyre fitting in London. Convenient, reliable, and efficient service. Get back on the road ASAP. Call us now!"
         />
       </Helmet>
+      <CarouselPage />
+
       <section className="container">
         <Row className="mt-5 mobile-margin">
           <Col lg={6} className="order-2">

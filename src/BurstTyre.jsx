@@ -1,15 +1,43 @@
 import React, { useEffect } from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 
 const BurstTyre = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update meta title and description when route changes
+    if (location.pathname === "/services/burst-tyre") {
+      document.title =
+        "Fix Burst Tyres Now - Call for Fast & Reliable Service!";
+      const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      if (ogTitleMeta) {
+        ogTitleMeta.setAttribute(
+          "content",
+          "Fix Burst Tyres Now - Call for Fast & Reliable Service!"
+        );
+      }
+      const descriptionMeta = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (descriptionMeta) {
+        descriptionMeta.setAttribute(
+          "content",
+          "Get immediate assistance for burst tyres. Fast, reliable service available 24/7 to get you back on the road quickly and safely. Call us now!"
+        );
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <Helmet>
-        <title>Brust Tyre service Near Me - 24/7 Emergency Assistance</title>
+        <title id="meta-title">Fix Burst Tyres Now - Call for Fast & Reliable Service!</title>
         <meta
           name="description"
-          content="Pro Tyre Fitters provide fast and reliable Brust Tyre services near you. Our experienced team of specialists are available 24/7 to quickly respond."
+          id="meta-description"
+          content="Get immediate assistance for burst tyres. Fast, reliable service available 24/7 to get you back on the road quickly and safely. Call us now!"
         />
       </Helmet>
       <ServicePage

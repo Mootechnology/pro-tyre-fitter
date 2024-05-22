@@ -1,15 +1,41 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 
 const MobileTyreRepair = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update meta title and description when route changes
+    if (location.pathname === "/services/mobile-tyre-repair") {
+      document.title = "Tyre Repair Near Me | Find the Best Tyre Repair Service";
+      const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+      if (ogTitleMeta) {
+        ogTitleMeta.setAttribute(
+          "content",
+          "Tyre Repair Near Me | Find the Best Tyre Repair Service"
+        );
+      }
+      const descriptionMeta = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (descriptionMeta) {
+        descriptionMeta.setAttribute(
+          "content",
+          "Need professional tyre repair services near you? Look no further! Expert tyre repair near you in London! Quick and Reliable Service"
+        );
+      }
+    }
+  }, [location]);
   return (
     <>
       <Helmet>
-        <title>Mobile Tyre Repair - 24 Hour Tyre Repair near me</title>
+        <title>Tyre Repair Near Me | Find the Best Tyre Repair Service</title>
         <meta
           name="description"
-          content="Need a tyre repair in a hurry? Rely on our 24 hour mobile tyre repair service for fast, efficient tyre repair near you. We specialize in providing emergency tyre repair and more!"
+          content="Need professional tyre repair services near you? Look no further! Expert tyre repair near you in London! Quick and Reliable Service"
         />
       </Helmet>
       <ServicePage

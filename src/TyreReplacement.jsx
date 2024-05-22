@@ -1,9 +1,18 @@
 import React from 'react'
 import ServicePage from './ServicePage'
+import { Helmet } from "react-helmet";
 
 const TyreReplacement = () => {
   return (
     <>
+    <Helmet>
+        <title>London Mobile Tyre Replacement | Fast Service</title>
+        <meta
+          name="description"
+          content="Don’t wait! Our expert mobile tyre replacement service in London ensures quick, reliable, and hassle-free solutions. Get back on the road confidently."
+        />
+      </Helmet>
+
      <ServicePage
         mergedHeaderStyle="tr"
         imgOne="/images/tr1.png"

@@ -6,10 +6,10 @@ const MobileTyreRepair = () => {
   return (
     <>
       <Helmet>
-        <title>Mobile Tyre Repair - 24 Hour Tyre Repair near me</title>
+        <title>Tyre Repair Near Me | Find the Best Tyre Repair Service</title>
         <meta
           name="description"
-          content="Need a tyre repair in a hurry? Rely on our 24 hour mobile tyre repair service for fast, efficient tyre repair near you. We specialize in providing emergency tyre repair and more!"
+          content="Need professional tyre repair services near you? Look no further! Expert tyre repair near you in London! Quick and Reliable Service"
         />
       </Helmet>
       <ServicePage

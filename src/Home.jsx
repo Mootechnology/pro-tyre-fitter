@@ -43,10 +43,10 @@ const Home = () => {
     <>
       <CarouselPage />
       <Helmet>
-        <title>24 Hour Mobile Tyre Fitting near me - Tyre Fitting London</title>
+        <title>London Mobile Tyre Fitting | 24-Hour Mobile Tyre Service</title>
         <meta
           name="description"
-          content="Need a tyre fitting urgently? Our 24 hour tyre service London gives you the convenience and peace of mind you need. Fast, reliable service Call now for on-the-spot assistance!"
+          content="Expert mobile tyre fitting in London. Convenient, reliable, and efficient service. Get back on the road ASAP. Call us now!"
         />
       </Helmet>
       <section className="container">

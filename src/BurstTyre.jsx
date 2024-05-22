@@ -6,10 +6,10 @@ const BurstTyre = () => {
   return (
     <>
       <Helmet>
-        <title>Brust Tyre service Near Me - 24/7 Emergency Assistance</title>
+        <title>Fix Burst Tyres Now - Call for Fast & Reliable Service!</title>
         <meta
           name="description"
-          content="Pro Tyre Fitters provide fast and reliable Brust Tyre services near you. Our experienced team of specialists are available 24/7 to quickly respond."
+          content="Get immediate assistance for burst tyres. Fast, reliable service available 24/7 to get you back on the road quickly and safely. Call us now!"
         />
       </Helmet>
       <ServicePage

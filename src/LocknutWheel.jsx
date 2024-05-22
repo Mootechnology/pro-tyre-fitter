@@ -31,7 +31,7 @@ const LocknutWheel = () => {
   return (
     <>
       <Helmet>
-        <title>Locking Wheel Nut Removal - 100% Guaranteed Removal</title>
+        <title>Locking Wheel Nut Removal - Fast, Professional Service</title>
         <meta
           name="description"
           content="Get 100% guaranteed locking wheel nut removal with our expert technicians. Rely on our fast and professional service to get your wheels off and back on the road quickly."

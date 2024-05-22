@@ -32,10 +32,10 @@ const FlatTyre = () => {
   return (
     <>
       <Helmet>
-        <title>Jump Start Service 24/7 - Car Jump Start Service London</title>
+        <title>Solve Your Car Troubles with Our Reliable Flat Tyre Repair Services</title>
         <meta
           name="description"
-          content="Need an emergency jump start? Look no further! Our 24/7 jump start service is available near you to help get your car started quickly, safely, and hassle-free."
+          content="Expert flat tyre repair in London. Trust our experienced technicians to fix your car troubles in no time. Contact us today!"
         />
       </Helmet>
       <ServicePage

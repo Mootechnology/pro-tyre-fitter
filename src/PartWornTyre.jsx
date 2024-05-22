@@ -1,9 +1,18 @@
 import React from 'react'
 import ServicePage from './ServicePage'
+import { Helmet } from "react-helmet";
 
 const PartWornTyre = () => {
   return (
     <>
+          <Helmet>
+        <title>Quality Part Worn Tyres - Affordable & Reliable Options</title>
+        <meta
+          name="description"
+          content="Find top-quality part worn tyres at affordable prices. Reliable, inspected tyres for safe driving. Check our range and save on your next tyre purchase today!"
+        />
+      </Helmet>
+
      <ServicePage
         // Images
         mergedHeaderStyle="pwt"

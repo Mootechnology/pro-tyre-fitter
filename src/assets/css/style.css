@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em !important;
+  font-size: 1.8em !important;
   text-transform: capitalize;
 }
 
@@ -38,14 +38,15 @@ h6 {
 }
 
 p {
-  font-family: "Cormorant Garamond", serif;
+  font-family: sans-serif;
   font-size: 1em !important;
+  color: gray;
 }
 
 li,
 label,
 ::placeholder {
-  font-family: "Cormorant Garamond", serif;
+  font-family: sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -1326,9 +1327,6 @@ footer {
   display: block;
 }
 
-.site_logo {
-  margin-top: 20px !important;
-}
 @media (max-width: 991px) {
   .desktop-navbar {
     display: none;

@@ -11,7 +11,6 @@ import {
 import { Link } from "react-router-dom";
 import logo from './assets/images/logo2.png';
 import { Helmet } from "react-helmet";
-import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 export default function WithContactForm() {

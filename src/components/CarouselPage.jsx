@@ -11,9 +11,9 @@ function CarouselPage() {
         <Carousel.Item>
           <img className="d-block w-100" src={img1} alt="First slide" />
           <Carousel.Caption>
-            <h3>
+            <h1>
               We provide punctured tyre repair service everywhere you want.
-            </h3>
+            </h1>
             {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
           </Carousel.Caption>
         </Carousel.Item>
@@ -21,7 +21,7 @@ function CarouselPage() {
           <img className="d-block w-100" src={img2} alt="Second slide" />
 
           <Carousel.Caption>
-            <h3>Our staff is available 24/7 for your assistance.</h3>
+            <h1>Our staff is available 24/7 for your assistance.</h1>
             {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
           </Carousel.Caption>
         </Carousel.Item>
@@ -29,7 +29,7 @@ function CarouselPage() {
           <img className="d-block w-100" src={img3} alt="Third slide" />
 
           <Carousel.Caption>
-            <h3>We offer emergency tyre repair service at your doorstep.</h3>
+            <h1>We offer emergency tyre repair service at your doorstep.</h1>
             {/* <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p> */}

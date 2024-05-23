@@ -1,10 +1,9 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 
 const JumpStart = () => {
-
   const location = useLocation();
 
   useEffect(() => {

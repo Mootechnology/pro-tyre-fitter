@@ -1,44 +1,99 @@
-
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import img1 from "../assets/images/Homepagebanner1.png";
-import img2 from "../assets/images/Homepagebanner2.png";
-import img3 from "../assets/images/Homepagebanner3.png";
+import { Link } from "react-router-dom";
+import logo from "../assets/images/logo2.png";
 
-function CarouselPage() {
+const Footer = () => {
   return (
-    <div className="hero__section">
-      <Carousel className="home-carousel">
-        <Carousel.Item>
-          <img className="d-block w-100" src={img1} alt="First slide" />
-          <Carousel.Caption>
-            <h1>
-              We provide punctured tyre repair service everywhere you want.
-            </h1>
-            {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={img2} alt="Second slide" />
+    <>
+      <footer className="container-fluid py-y dark-color">
+        <div className=" container mt-4 bg-dark">
+          {/* columns */}
+          <section className="row text-white">
+            <div className="col-md-3 my-2">
+              {/* <Link to="/" className="navbar-brand p-0">
+                    <h2 className="m-0">Pro Tyre Fitters</h2>
+                </Link>
+                <p className='mt-4'>Pro Tyre Fitters is a platform that covers all tyre-related issues and provides the best possible solutions with trained professionals wherever you need them.</p> */}
+              <Link to="/" className="p-0 m-0">
+                <div className="ts-logo-footer container p-0 m-0">
+                  <img src={logo} alt="logo" />
+                </div>
+              </Link>
+            </div>
+            {/* 2 */}
+            <div className="col-md-3 my-2">
+              <h4>Useful links</h4>
+              <ul className="d-flex flex-column p-0">
+                <Link to="/" className="footer-link">
+                  Home
+                </Link>
+                <Link to="/about" className="footer-link">
+                  About
+                </Link>
+                <Link to="/blogs" className="footer-link">
+                  Blog
+                </Link>
+                <Link
+                  to="/services/mobile-tyre-fitting"
+                  className="footer-link"
+                >
+                  Services
+                </Link>
+                <Link to="/contact" className="footer-link">
+                  Contact
+                </Link>
+              </ul>
+            </div>
+            {/* 3 */}
+            <div className="col-md-3 my-2">
+              <h4>Useful links</h4>
+              <ul className="d-flex flex-column p-0">
+                <Link
+                  to="/services/mobile-tyre-fitting"
+                  className="footer-link"
+                >
+                  Mobile Tyre Fitting
+                </Link>
+                <Link to="/services/mobile-tyre-repair" className="footer-link">
+                  Mobile Tyre Repair
+                </Link>
+                <Link to="/services/tyre-replacement" className="footer-link">
+                  Tyre Replacement
+                </Link>
+                <Link to="/services/flat-tyre" className="footer-link">
+                  Flat Tyres
+                </Link>
+                <Link to="/faqs" className="footer-link">
+                  FAQs
+                </Link>
+                <Link to="/contact" className="footer-link">
+                  Contact
+                </Link>
+              </ul>
+            </div>
+            {/* 4 */}
+            <div className="col-md-3 my-2">
+              {/* Contact Info */}
+              <div className="d-flex flex-column align-items-start">
+                <h4 className="mb-3">Contact Information</h4>
+                <div className="mb-2">
+                  <strong>Phone:</strong> (123) 456-7890
+                </div>
+                <div className="mb-3">
+                  <strong>Email:</strong> info@example.com
+                </div>
+                <Link to="/contact" className="btn btn-success">
+                  Contact Us
+                </Link>
+              </div>
+            </div>
 
-          <Carousel.Caption>
-            <h1>Our staff is available 24/7 for your assistance.</h1>
-            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={img3} alt="Third slide" />
-
-          <Carousel.Caption>
-            <h1>We offer emergency tyre repair service at your doorstep.</h1>
-            {/* <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p> */}
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    </div>
+            {/* END */}
+          </section>
+        </div>
+      </footer>
+    </>
   );
-}
+};
 
-export default CarouselPage;
+export default Footer;

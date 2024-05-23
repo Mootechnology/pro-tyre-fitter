@@ -73,20 +73,21 @@ const Footer = () => {
             </div>
             {/* 4 */}
             <div className="col-md-3 my-2">
-              <h5>Subscribe the Newsletter for discount</h5>
-              <form action="#" method="post">
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control my-2"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Subscribe"
-                  />
-                  <button className="btn btn-success">Subscribe</button>
+              {/* Contact Info */}
+              <div className="d-flex flex-column align-items-start">
+                <h4 className="mb-3">Contact Information</h4>
+                <div className="mb-2">
+                  <strong>Phone:</strong> (123) 456-7890
                 </div>
-              </form>
+                <div className="mb-3">
+                  <strong>Email:</strong> info@example.com
+                </div>
+                <Link to="/contact" className="btn btn-success">
+                  Contact Us
+                </Link>
+              </div>
             </div>
+
             {/* END */}
           </section>
         </div>

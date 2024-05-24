@@ -53,7 +53,7 @@ const Home = () => {
 
       <section className="container">
         <Row className="mt-5 mobile-margin">
-          <Col lg={6} className="order-2">
+          <Col md={6} className="order-2">
             <h2 className="text-success">
               Our excellent mobile tyre fitting in London
             </h2>
@@ -68,7 +68,7 @@ const Home = () => {
               destination or miss an essential part of the event.
             </p>
           </Col>
-          <Col lg={6} className="order-1 d-flex justify-content-center">
+          <Col md={6} className="order-1 d-flex justify-content-center">
             <img src={imgOne} alt="Mission" className="rounded img-fluid" />
           </Col>
         </Row>
@@ -76,7 +76,7 @@ const Home = () => {
 
       <Container>
         <Row style={{ marginTop: "4rem" }}>
-          <Col lg={6}>
+          <Col md={6}>
             <h2 className="text-success">
               Simplify your journey with Mobile tyre fitting
             </h2>
@@ -91,7 +91,7 @@ const Home = () => {
               prevent the problem from happening again.
             </p>
           </Col>
-          <Col lg={6} className="order-small-1 d-flex justify-content-center">
+          <Col md={6} className="order-small-1 d-flex justify-content-center">
             <img src={imgTwo} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
@@ -99,7 +99,7 @@ const Home = () => {
 
       <section className="container">
         <Row className="mt-5">
-          <Col lg={6} className="order-2">
+          <Col md={6} className="order-2">
             <h2 className="text-success">Nimble mobile tyre service near me</h2>
             <p>
               A tyre-related problem can lead to unpleasant incidents that cause
@@ -111,7 +111,7 @@ const Home = () => {
               instruction without time and space restrictions.
             </p>
           </Col>
-          <Col lg={6} className="order-1 d-flex justify-content-center">
+          <Col md={6} className="order-1 d-flex justify-content-center">
             <img src={imgThree} alt="Mission" className="rounded img-fluid" />
           </Col>
         </Row>
@@ -136,7 +136,7 @@ const Home = () => {
 
       <section className="container">
         <Row className="mt-5">
-          <Col lg={6} className="order-2">
+          <Col md={6} className="order-2">
             <h2 className="text-success">Our Mission</h2>
             <p>
               We aim to provide you with the best services at the most resonable
@@ -151,7 +151,7 @@ const Home = () => {
               affordable services at an affordable price.
             </p>
           </Col>
-          <Col lg={6} className="order-1 d-flex justify-content-center">
+          <Col md={6} className="order-1 d-flex justify-content-center">
             <img src={imgFour} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>

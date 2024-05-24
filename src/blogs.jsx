@@ -73,7 +73,7 @@ function BlogPage() {
      
      <Container>
       <Row className="justify-content-center">
-        <Col lg={6} className="image-container mt-3">
+        <Col md={6} className="image-container mt-3">
           <img src="images/img-11.jpg" alt="Image 1" className="img-fluid" />
           <div className="text-container">
             <h4>Heading Goes Here</h4>
@@ -81,7 +81,7 @@ function BlogPage() {
             <Link to="/" className='btn btn-success'>Read More</Link>
           </div>
         </Col>
-        <Col lg={6} className="image-container mt-3">
+        <Col md={6} className="image-container mt-3">
           <img src="images/img-11.jpg" alt="Image 2" className="img-fluid" />
           <div className="text-container">
             <h4>Another Heading Goes Here</h4>
@@ -108,10 +108,10 @@ function BlogPage() {
       <Container className="py-5">
         {posts.map(post => (
           <Row key={post.id} className="mt-4">
-            <Col lg={6} className='d-flex justify-content-center'>
+            <Col md={6} className='d-flex justify-content-center'>
               <img src={post.imageUrl} alt={post.title} className="img-fluid mb-3 rounded" />
             </Col>
-            <Col lg={6}>
+            <Col md={6}>
               <div className='mt-3'>
                 <h3 className='text-center'>{post.title}</h3>
                 <p className='text-center'>{post.content.slice(0, 150)}...</p>

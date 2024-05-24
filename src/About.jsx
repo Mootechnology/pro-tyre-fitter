@@ -80,7 +80,7 @@ function About() {
 
       <Container className="py-5">
         <Row style={{ marginTop: "2.5rem" }}>
-          <Col lg={6}>
+          <Col md={6}>
             <h2 className="text-success">We are your vehicle caretaker</h2>
             <p>
               We are available 24/7 to serve you beyond your expectations. Our
@@ -94,7 +94,7 @@ function About() {
               services at your desired location.
             </p>
           </Col>
-          <Col lg={6} className="order-small-1 d-flex justify-content-center">
+          <Col md={6} className="order-small-1 d-flex justify-content-center">
             <img src={About1} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
@@ -102,7 +102,7 @@ function About() {
         {/* <Cards/> */}
 
         <Row style={{ marginTop: "2.5rem" }}>
-          <Col lg={6} className="order-2">
+          <Col md={6} className="order-2">
             <h2 className="text-success">
               Our commitment to serve you regardless of time and space{" "}
             </h2>
@@ -118,13 +118,13 @@ function About() {
               destination and make it more convenient.
             </p>
           </Col>
-          <Col lg={6} className="order-1 d-flex justify-content-center">
+          <Col md={6} className="order-1 d-flex justify-content-center">
             <img src={About2} alt="Mission" className="img-fluid rounded" />
           </Col>
         </Row>
 
         <Row className="mt-3">
-          <Col lg={6}>
+          <Col md={6}>
             <h2 className="text-success">Why Choose Us?</h2>
             <ul>
               <li>Available 24/7 to serve you.</li>
@@ -139,7 +139,7 @@ function About() {
               <li>Service specialists manage emergencies.</li>
             </ul>
           </Col>
-          <Col lg={6}>
+          <Col md={6}>
             <img
               src={About3}
               alt="Placeholder Image"

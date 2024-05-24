@@ -135,10 +135,10 @@ const ServicePage = ({pageTitle, ...otherProps}) => {
     {/* Image and text */}
     <div className='container'>
         <Row style={{ marginTop: '4rem' }}>
-            <Col lg={6} className='order-2 d-flex justify-content-center'>
+            <Col md={6} className='order-2 d-flex justify-content-center'>
                 <img src={imgFive} alt="Mission" className="img-fluid rounded" />
             </Col>
-            <Col lg={6} className='order-1'>
+            <Col md={6} className='order-1'>
                 <h2 className='text-success'>{headingFive}</h2>
                 <p>{paraFive}</p>
             </Col>

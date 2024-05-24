@@ -1,49 +1,12 @@
-import React, { useState, useEffect } from "react";
-import $ from "jquery";
+import React, { useState, useRef } from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import styles from "./Cards.module.css";
 
 const Cards = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const carouselInnerRef = useRef(null);
 
-  useEffect(() => {
-    const handleNextClick = () => {
-      const carouselWidth = $(".carousel-inner")[0].scrollWidth;
-      const cardWidth = $(".carousel-item").width();
-
-      if (scrollPosition < carouselWidth - cardWidth * 4) {
-        setScrollPosition(scrollPosition + cardWidth);
-        $(".carousel-inner").animate(
-          { scrollLeft: scrollPosition + cardWidth },
-          600
-        );
-      }
-    };
-
-    const handlePrevClick = () => {
-      const cardWidth = $(".carousel-item").width();
-
-      if (scrollPosition > 0) {
-        setScrollPosition(scrollPosition - cardWidth);
-        $(".carousel-inner").animate(
-          { scrollLeft: scrollPosition - cardWidth },
-          600
-        );
-      }
-    };
-
-    $(".carousel-control-next").on("click", handleNextClick);
-    $(".carousel-control-prev").on("click", handlePrevClick);
-
-    return () => {
-      // Cleanup event listeners
-      $(".carousel-control-next").off("click", handleNextClick);
-      $(".carousel-control-prev").off("click", handlePrevClick);
-    };
-  }, [scrollPosition]);
-
-  // Example data for cards
   const cardData = [
     {
       title: "Mobile tyre fitting",
@@ -71,69 +34,83 @@ const Cards = () => {
     },
   ];
 
+  const handleNextClick = () => {
+    const carouselInner = carouselInnerRef.current;
+    const cardWidth = carouselInner.children[0].offsetWidth;
+
+    if (scrollPosition < carouselInner.scrollWidth - cardWidth * 3) {
+      setScrollPosition(scrollPosition + cardWidth);
+      carouselInner.scrollTo({
+        left: scrollPosition + cardWidth,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handlePrevClick = () => {
+    const carouselInner = carouselInnerRef.current;
+    const cardWidth = carouselInner.children[0].offsetWidth;
+
+    if (scrollPosition > 0) {
+      setScrollPosition(scrollPosition - cardWidth);
+      carouselInner.scrollTo({
+        left: scrollPosition - cardWidth,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <>
+    <div id="carouselExampleControls" className={`carousel ${styles.carousel}`}>
       <div
-        id="carouselExampleControls"
-        className={`carousel ${styles.carousel}`}
+        className={`carousel-inner ${styles["carousel-inner"]}`}
+        ref={carouselInnerRef}
       >
-        <div className={`carousel-inner ${styles["carousel-inner"]}`}>
-          {cardData.map((card, index) => (
-            <div
-              key={index}
-              className={`carousel-item ${index === 0 ? "active" : ""} ${
-                styles["carousel-item"]
-              }`}
-            >
-              <div className={`card ${styles.card}`}>
-                <div
-                  className={`img-wrapper cards-image ${styles["img-wrapper"]}`}
-                >
-                  <img src={card.image} alt="card" />
-                </div>
-
-                <div className={`card-body ${styles["card-body"]}`}>
-                  <h4 className={`card-title ${styles["card-title"]}`}>
-                    {card.title}
-                  </h4>
-                  <p className={`card-text ${styles["card-text"]}`}>
-                    {card.text}
-                  </p>
-
-                  <Link to={card.path}>
-                    <Button variant="success mt-3 px-4">Learn More</Button>
-                  </Link>
-                </div>
+        {cardData.map((card, index) => (
+          <div
+            key={index}
+            className={`carousel-item ${index === 0 ? "active" : ""} ${
+              styles["carousel-item"]
+            }`}
+          >
+            <div className={`card ${styles.card}`}>
+              <div
+                className={`img-wrapper cards-image ${styles["img-wrapper"]}`}
+              >
+                <img src={card.image} alt="card" />
+              </div>
+              <div className={`card-body ${styles["card-body"]}`}>
+                <h4 className={`card-title ${styles["card-title"]}`}>
+                  {card.title}
+                </h4>
+                <p className={`card-text ${styles["card-text"]}`}>
+                  {card.text}
+                </p>
+                <Link to={card.path}>
+                  <Button variant="success mt-3 px-4">Learn More</Button>
+                </Link>
               </div>
             </div>
-          ))}
-        </div>
-        <button
-          className={`carousel-control-prev bg-success ${styles["carousel-control-prev"]}`}
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className={`carousel-control-next bg-success ${styles["carousel-control-next"]}`}
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+          </div>
+        ))}
       </div>
-    </>
+      <button
+        className={`carousel-control-prev bg-success ${styles["carousel-control-prev"]}`}
+        type="button"
+        onClick={handlePrevClick}
+      >
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button
+        className={`carousel-control-next bg-success ${styles["carousel-control-next"]}`}
+        type="button"
+        onClick={handleNextClick}
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
   );
 };
 

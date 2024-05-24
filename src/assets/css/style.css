@@ -450,21 +450,6 @@ body {
   height: 83vh;
 }
 
-.newsletter {
-  /* width: 100vw; */
-  height: 280px;
-  background-image: url("../images/banners/Subscribe To Our News Letter.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-@media (max-width: 1024px) {
-  .newsletter {
-    height: 230px;
-    /* margin-bottom: -30px; */
-  }
-}
 .pc-home-banner-icon i {
   color: #fff;
   font-size: 40px;
@@ -703,10 +688,6 @@ footer {
   opacity: 1;
 }
 
-/* .parent-container img{
-    height: 54vh;
-} */
-
 .img-wrapper img {
   width: 100%;
   max-height: 100%;
@@ -857,37 +838,6 @@ footer {
   margin: 0 auto;
 }
 
-.newsletter .content {
-  max-width: 650px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.newsletter .content h2 {
-  color: var(--bs-success);
-  margin-bottom: 40px;
-}
-
-.newsletter .content .form-control {
-  height: 50px;
-  border-color: #ffffff;
-  border-radius: 0;
-}
-
-.newsletter .content.form-control:focus {
-  box-shadow: none;
-}
-
-.newsletter .content .btn {
-  min-height: 50px;
-  border-radius: 0;
-  background: var(--bs-success);
-  color: #fff;
-  font-weight: 600;
-}
-
 .card-boxes {
   display: flex;
   justify-content: space-evenly;
@@ -949,23 +899,11 @@ footer {
   }
 }
 
-@media (max-width: 1030px) {
-  .hero-form {
-    width: 55%;
-    font-size: small;
-  }
-}
-
 .cards-image img {
   height: 45vh;
 }
 
 @media (max-width: 768px) {
-  .hero-form {
-    width: 65%;
-    margin-top: 30px;
-  }
-
   .cards-image img {
     height: 28vh !important;
   }
@@ -980,14 +918,6 @@ footer {
     display: none;
   }
 
-  .newsletter-size {
-    margin-bottom: 10px !important;
-  }
-
-  .newsletter {
-    height: 180px;
-  }
-
   .navbar-toggler {
     margin-left: 200px !important;
   }
@@ -999,34 +929,11 @@ footer {
   }
 }
 
-@media (max-width: 485px) {
-  .hero-form {
-    margin-top: 10px;
-    width: 90%;
-  }
-}
-
-@media (max-width: 369px) {
-  .hero-form {
-    width: 100%;
-  }
-}
-
 .hover-logo img {
   display: none;
 }
 
 @media (max-width: 575px) {
-  .newsletter-size {
-    font-size: 20px !important;
-  }
-  .newsletter {
-    height: 230px;
-  }
-  .newsletter-form {
-    width: 100%;
-  }
-
   .hover-logo img {
     display: block;
     position: absolute;
@@ -1074,18 +981,6 @@ footer {
 
 .para-width {
   width: 90% !important;
-}
-
-.dual-banner-imageOne {
-  background-image: url("/images/img-12.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.dual-banner-imageTwo {
-  background-image: url("/images/img-11.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .single-banner-image {
@@ -1154,9 +1049,6 @@ footer {
     display: none;
   }
 
-  .hero-form-img {
-    display: none !important;
-  }
   .overlay {
     font-size: 12px;
   }
@@ -1174,7 +1066,7 @@ footer {
   .pwt,
   .js,
   .lwr {
-    margin-top: -82px;
+    margin-top: -95px;
     margin-bottom: -8rem;
   }
 }
@@ -1377,7 +1269,7 @@ footer {
     height: 60vh;
   }
 }
-/* New Hero Section Carousel */
+
 .home-carousel img {
   height: 70vh;
 }
@@ -1399,6 +1291,10 @@ footer {
   .home-carousel img {
     height: 55vh;
   }
+  .home-carousel h1{
+    position: absolute;
+    top: 10px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1408,10 +1304,31 @@ footer {
   .home-carousel img {
     height: 40vh;
   }
+  .home-carousel h1{
+    position: absolute;
+    top: 30px;
+  }
 }
 
 @media (max-width: 429px) {
   .home-carousel img {
     height: 25vh;
+  }
+  .home-carousel h1{
+    font-size: 15px !important;
+    position: absolute;
+    top: 75px;
+  }
+  .img-fluid{
+    width: 87%;
+  }
+
+  .parent-container img{
+    height: 35vh;
+  }
+
+  .overlay{
+    width: 87%;
+    margin-left: 7%;
   }
 }

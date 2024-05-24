@@ -21,7 +21,7 @@ const Banner = () => {
                 <div><i class="fa-solid fa-envelope fa-2xl"></i></div>
                 <div>
                   <span className="d-block text-white">For Email Enquiry</span>
-                  <h5 className="tc-text-color">Email@email.com</h5>
+                  <h5 className="tc-text-color">contact@protyrefitters.com</h5>
                   <span className="d-block text-white">We are present 24/7</span>
                 </div>
               </div>

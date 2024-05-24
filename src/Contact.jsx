@@ -106,7 +106,7 @@ function ContactPage() {
 
       <Container className="py-5">
         <Row>
-          <Col lg={6}>
+          <Col md={6}>
             <h2 className="text-success">Contact Us</h2>
             <p>
               Call us today to solve your tyre problems. Fill out the form
@@ -153,7 +153,7 @@ function ContactPage() {
             </Form>
           </Col>
           <Col
-            lg={6}
+            md={6}
             className="d-flex align-items-center justify-content-center mt-2"
           >
             <img

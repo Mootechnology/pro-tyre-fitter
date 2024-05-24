@@ -107,7 +107,7 @@ function Navbar() {
                 </NavLink>
                 <div className="nav-item dropdown">
                   <button
-                    class="btn dropdown-toggle text-white px-0"
+                    className="btn dropdown-toggle text-white px-0"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -228,7 +228,7 @@ function Navbar() {
                       >
                         Home
                       </NavLink>
-                      <div class="nav-item dropdown">
+                      <div className="nav-item dropdown">
                         <Link
                           to="/services/mobile-tyre-fitting"
                           className="nav-link dropdown-toggle"
@@ -236,9 +236,9 @@ function Navbar() {
                         >
                           Services
                         </Link>
-                        <div class="dropdown-menu new-dropdown-menu m-0">
-                          <div class="row">
-                            <div class="col">
+                        <div className="dropdown-menu new-dropdown-menu m-0">
+                          <div className="row">
+                            <div className="col">
                               <Link
                                 to="/services/mobile-tyre-fitting"
                                 className="dropdown-item"
@@ -276,7 +276,7 @@ function Navbar() {
                                 Flat Tyre
                               </Link>
                             </div>
-                            <div class="col">
+                            <div className="col">
                               <Link
                                 to="/services/burst-tyre"
                                 className="dropdown-item"
@@ -319,8 +319,8 @@ function Navbar() {
                               </Link>
                             </div>
                           </div>
-                          <div class="row">
-                            <div class="col">
+                          <div className="row">
+                            <div className="col">
                               <Link
                                 to="/services/mobile-breakdown"
                                 className="dropdown-item"

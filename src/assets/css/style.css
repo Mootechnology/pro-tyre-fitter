@@ -1291,7 +1291,7 @@ footer {
   .home-carousel img {
     height: 55vh;
   }
-  .home-carousel h1{
+  .home-carousel h1 {
     position: absolute;
     top: 10px;
   }
@@ -1304,7 +1304,7 @@ footer {
   .home-carousel img {
     height: 40vh;
   }
-  .home-carousel h1{
+  .home-carousel h1 {
     position: absolute;
     top: 30px;
   }
@@ -1314,20 +1314,20 @@ footer {
   .home-carousel img {
     height: 25vh;
   }
-  .home-carousel h1{
+  .home-carousel h1 {
     font-size: 15px !important;
     position: absolute;
     top: 75px;
   }
-  .img-fluid{
+  .img-fluid {
     width: 87%;
   }
 
-  .parent-container img{
+  .parent-container img {
     height: 35vh;
   }
 
-  .overlay{
+  .overlay {
     width: 87%;
     margin-left: 7%;
   }

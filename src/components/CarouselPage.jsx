@@ -14,6 +14,11 @@ function CarouselPage() {
             <h1>
               We provide punctured tyre repair service everywhere you want.
             </h1>
+            {/* <Link> */}
+            <a type="button" style={CTAButton} href="contact">
+              Learn More
+            </a>
+            {/* </Link> */}
             {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
           </Carousel.Caption>
         </Carousel.Item>
@@ -22,6 +27,9 @@ function CarouselPage() {
 
           <Carousel.Caption>
             <h1>Our staff is available 24/7 for your assistance.</h1>
+            <a type="button" style={CTAButton} href="contact">
+              Learn More
+            </a>
             {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
           </Carousel.Caption>
         </Carousel.Item>
@@ -30,6 +38,9 @@ function CarouselPage() {
 
           <Carousel.Caption>
             <h1>We offer emergency tyre repair service at your doorstep.</h1>
+            <a type="button" style={CTAButton} href="contact">
+              Learn More
+            </a>
             {/* <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p> */}
@@ -39,5 +50,13 @@ function CarouselPage() {
     </div>
   );
 }
+const CTAButton = {
+  padding: "8px 17px",
+  borderRadius: "7px",
+  backgroundColor: "#30a18b",
+  border: "none",
+  color: "white",
+  textDecoration: "none",
+};
 
 export default CarouselPage;

@@ -8,7 +8,6 @@ import {
   MDBTextArea,
 } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
-import logo from "./assets/images/logo2.png";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 
@@ -54,7 +53,7 @@ export default function WithContactForm() {
         <h1>Faq Page</h1>
         <h5>
           <Link to="/" className="linkStyle">
-            <i class="fa-solid fa-house"></i> Home{" "}
+            <i className="fa-solid fa-house"></i> Home{" "}
           </Link>{" "}
           | Faq
         </h5>
@@ -144,7 +143,7 @@ export default function WithContactForm() {
             </MDBCol>
             <MDBCol lg="6" md="12" className="text-center mb-3">
               <p>
-                <span class="fw-bold" className="text-success">
+                <span className="fw-bold text-success">
                   Still have any questions? Contact us to get your answer!
                 </span>
               </p>

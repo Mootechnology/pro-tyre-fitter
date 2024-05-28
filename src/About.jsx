@@ -13,8 +13,7 @@ function About() {
   useEffect(() => {
     // Update meta title and description when route changes
     if (location.pathname === "/about") {
-      document.title =
-        "Expert Tyre Services in London - Tyre Fitting, Repair & More";
+      document.title = "Expert Tyre Services in London - Tyre Fitting, Repair & More";
       const ogTitleMeta = document.querySelector('meta[property="og:title"]');
       if (ogTitleMeta) {
         ogTitleMeta.setAttribute(
@@ -37,9 +36,7 @@ function About() {
   return (
     <div>
       <Helmet>
-        <title id="meta-title">
-          Expert Tyre Services in London - Tyre Fitting, Repair & More
-        </title>
+        <title id="meta-title">Expert Tyre Services in London - Tyre Fitting, Repair & More</title>
         <meta
           name="description"
           id="meta-description"
@@ -47,11 +44,11 @@ function About() {
         />
       </Helmet>
       {/* Banner Section */}
-      <header className="headerStyle" style={{ backgroundImage: `url(${BG})` }}>
+      <header className="headerStyle about-header" style={{ backgroundImage: `url(${BG})` }}>
         <h1>About Us</h1>
         <h5>
           <Link to="/" className="linkStyle">
-            <i className="fa-solid fa-house"></i> Home{" "}
+            <i class="fa-solid fa-house"></i> Home{" "}
           </Link>{" "}
           | About
         </h5>

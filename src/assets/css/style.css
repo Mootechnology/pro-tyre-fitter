@@ -41,6 +41,7 @@ p {
   font-family: sans-serif;
   font-size: 1em !important;
   color: gray;
+  text-align: justify !important;
 }
 
 li,
@@ -1055,8 +1056,6 @@ footer {
 }
 
 @media (max-width: 429px) {
-  .headerStyle,
-  .bannerStyle,
   .mtf,
   .mtr,
   .tr,
@@ -1066,8 +1065,13 @@ footer {
   .pwt,
   .js,
   .lwr {
-    margin-top: -95px;
+    margin-top: -97px;
     margin-bottom: -8rem;
+  }
+
+  .about-header{
+    margin-top: -30px !important;
+    margin-bottom: -4rem;
   }
 }
 
@@ -1129,7 +1133,7 @@ footer {
   .pwt,
   .js,
   .lwr {
-    margin-top: -64px;
+    margin-top: -79px !important;
     margin-bottom: -8rem;
   }
 }
@@ -1291,7 +1295,7 @@ footer {
   .home-carousel img {
     height: 55vh;
   }
-  .home-carousel h1 {
+  .home-carousel h1{
     position: absolute;
     top: 10px;
   }
@@ -1304,7 +1308,7 @@ footer {
   .home-carousel img {
     height: 40vh;
   }
-  .home-carousel h1 {
+  .home-carousel h1{
     position: absolute;
     top: 30px;
   }
@@ -1314,21 +1318,28 @@ footer {
   .home-carousel img {
     height: 25vh;
   }
-  .home-carousel h1 {
+  .home-carousel h1{
     font-size: 15px !important;
     position: absolute;
     top: 75px;
   }
-  .img-fluid {
+  .img-fluid{
     width: 87%;
   }
 
-  .parent-container img {
+  .parent-container img{
     height: 35vh;
   }
 
-  .overlay {
+  .overlay{
     width: 87%;
     margin-left: 7%;
+  }
+
+  .cta-home-btn{
+    font-size: 14px;
+    position: absolute;
+    bottom: -116px;
+    left: 33%;
   }
 }

@@ -15,8 +15,8 @@ function CarouselPage() {
               We provide punctured tyre repair service everywhere you want.
             </h1>
             {/* <Link> */}
-            <a type="button" style={CTAButton} href="tel:442033939474">
-              Call Us
+            <a type="button" className="cta-home-btn" style={CTAButton} href="contact">
+              Learn More
             </a>
             {/* </Link> */}
             {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
@@ -27,8 +27,8 @@ function CarouselPage() {
 
           <Carousel.Caption>
             <h1>Our staff is available 24/7 for your assistance.</h1>
-            <a type="button" style={CTAButton} href="tel:442033939474">
-              Call Us
+            <a type="button" className="cta-home-btn" style={CTAButton} href="contact">
+              Learn More
             </a>
             {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
           </Carousel.Caption>
@@ -38,8 +38,8 @@ function CarouselPage() {
 
           <Carousel.Caption>
             <h1>We offer emergency tyre repair service at your doorstep.</h1>
-            <a type="button" style={CTAButton} href="tel:442033939474">
-              Call Us
+            <a type="button" className="cta-home-btn" style={CTAButton} href="contact">
+              Learn More
             </a>
             {/* <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.

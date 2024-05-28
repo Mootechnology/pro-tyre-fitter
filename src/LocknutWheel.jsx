@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const LocknutWheel = () => {
+  const paraOne = (<>A loose tyre nut can become a nuisance, cause an unpleasant accident, and lead to theft. It's important to ensure your tyre is fully secured and prepared for travel. <Link to='/'>Pro Tyre Fitters</Link> is a platform that cares for its customers' needs and ensures tyre safety by providing locking wheel nut removal services to solve minor to major tyre-related problems. They are always available to provide smooth service and protect your vehicle from unexpected damages.</>) 
+
   const location = useLocation();
 
   useEffect(() => {
@@ -53,7 +55,7 @@ const LocknutWheel = () => {
         headingThree="Excellent locking wheel nut removal tool"
         headingFour="Rapid locking wheel nut removal service near me"
         headingFive="Inexpensive locking wheel nut removal service"
-        paraOne="A loose tyre nut can become a nuisance, cause an unpleasant accident, and lead to theft. It's important to ensure your tyre is fully secured and prepared for travel. Pro Tyre Fitters is a platform that cares for its customers' needs and ensures tyre safety by providing locking wheel nut removal services to solve minor to major tyre-related problems. They are always available to provide smooth service and protect your vehicle from unexpected damages."
+        paraOne={paraOne}
         paraTwo="Our locking wheel nut remover expert provides you the service that helps you to protect your tyres from theft; they tighten the nut, which prevents the tyre from being stolen. In the event of a tyre change or repair, the first step is to loosen the wheel nut to allow it to move forward. Non-professionals often remove them so severely that they damage the tyre and cause new stress for you. Our professionals serve with great care and efficiency that prevent tyres from damage.
         "
         paraThree="Our highly trained professionals provide the services; they know all the techniques and are knowledgeable about the tools. They arrive at your location with a locking wheel nut removal tool to provide you with a smooth and convenient service. They tighten the loose nut that secured the tyre and loosen it to remove the damaged tyre. Our professionals reach your desired location no matter where you need help, and they are always ready to solve the problem when you need it."

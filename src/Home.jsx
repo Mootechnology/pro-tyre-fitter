@@ -10,12 +10,11 @@ import imgOne from "./assets/images/home/Experience our excellent mobile tyre fi
 import imgTwo from "./assets/images/home/Simplify your journey with Mobile tyre fitting.png";
 import imgThree from "./assets/images/home/Nimble mobile tyre service near me.png";
 import imgFour from "./assets/images/home/Our mission.png";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const Home = () => {
   const location = useLocation();
-
   useEffect(() => {
     // Update meta title and description when route changes
     if (location.pathname === "/") {
@@ -83,7 +82,7 @@ const Home = () => {
             <p>
               Mobile Tyre Fitting London manages a wide range of tyre-related
               issues, covering emergencies and providing you with services from
-              tyre repairs to tyre replacements. We provide mobile tyre fitting
+              <Link to='services/mobile-tyre-repair'> tyre repairs</Link> to <Link to='services/tyre-replacement'> tyre replacements</Link>. We provide <Link to='services/mobile-tyre-fitting'> mobile tyre fitting </Link>
               services at your designated location for your convenience. Our
               trained professionals know all tyre-related problems, handle
               emergencies easily and know possible solutions. They ensure your

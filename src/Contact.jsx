@@ -72,13 +72,13 @@ function ContactPage() {
         />
       </Helmet>
       {/* Banner Section */}
-      <header className="headerStyle" style={{ backgroundImage: `url(${BG})` }}>
-        <h1>Contact Us</h1>
+      <header className="headerStyle" style={{ backgroundImage: 'none' }}>
+        <h1 style={{color:'black'}}>Contact Us</h1>
         <h5>
           <Link to="/" className="linkStyle">
             <i className="fa-solid fa-house"></i> Home{" "}
           </Link>{" "}
-          | Contact
+          | <span style={{color: 'black'}}>Contact</span>
         </h5>
       </header>
 

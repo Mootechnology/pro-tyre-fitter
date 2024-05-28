@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const JumpStart = () => {
+  const paraOne = (<>A weak and depleted battery can stall your vehicle anywhere without alarm, and sudden stops during the journey can cause unexpected stress. We know that a depleted battery slows down your vehicle's performance and leads to late arrival at your destination. <Link to='/'>Pro Tyre Fitters</Link> is a platform that takes care of its customers' needs and offers you a jumpstart service to solve your car battery problem. We provide you with the best professionals who provide you with the services to overcome this situation and resume your journey.</>)
+  const ctaText = (<><Link to='/contact'>Call us today</Link> to get jumpstart service and save your battery from further damage. Our professionals guide you completely and provide you with a jumpstart car battery charger that will help you in the future. They reach your location and solve your problem immediately.</>)
+
   const location = useLocation();
 
   useEffect(() => {
@@ -52,8 +55,7 @@ const JumpStart = () => {
         headingThree="Quick fix with jumpstart service near me "
         headingFour="Superlative jumpstart car battery charger "
         headingFive="Jumpstart service at your desired location"
-        paraOne="A weak and depleted battery can stall your vehicle anywhere without alarm, and sudden stops during the journey can cause unexpected stress. We know that a depleted battery slows down your vehicle's performance and leads to late arrival at your destination. Pro Tyre Fitters is a platform that takes care of its customers' needs and offers you a jumpstart service to solve your car battery problem. We provide you with the best professionals who provide you with the services to overcome this situation and resume your journey. 
-        "
+        paraOne={paraOne}
         paraTwo="A sudden stop in the car causes you mental and financial stress, and it also brings physical stress when you take the car to the garage. We understand your burden, and to reduce your stress, we offer you the best garage services with well-trained professionals at your location. Our professionals arrive at your location with a complete toolkit and the necessary equipment to provide jumpstart car service. They arrive quickly at your one call.
         "
         paraThree="Most of the time, the car battery creates problems at the roadside, which leads to a panic situation for you. All you need is a jumpstart service near me that will provide you with the best service at a very affordable price. One of the causes of battery depletion is extreme weather conditions, such as extreme heat and cold. Other causes are battery ageing and leaving interior lights, headlights or any electrical component on. Our professionals arrive on the spot to save you and your vehicle from stress.
@@ -75,8 +77,7 @@ const JumpStart = () => {
         scardOne="24/7 available to handle emergencies"
         scardTwo="Prioritise your safety         "
         scardThree="Serve you at your designated location"
-        ctaText="Call us today to get jumpstart service and save your battery from further damage. Our professionals guide you completely and provide you with a jumpstart car battery charger that will help you in the future. They reach your location and solve your problem immediately.
-        "
+        ctaText={ctaText}
       />
     </>
   );

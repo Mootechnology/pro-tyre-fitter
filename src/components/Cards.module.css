@@ -13,6 +13,29 @@
     } */
 }
 
+@media screen and (max-width: 575px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 1);
+  }
+}
+
+
 .carousel-inner {
   padding: 1em;
 }

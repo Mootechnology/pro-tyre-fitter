@@ -87,7 +87,12 @@ const Cards = () => {
                   {card.text}
                 </p>
                 <Link to={card.path}>
-                  <Button variant="success mt-3 px-4">Learn More</Button>
+                  <Button
+                    variant="success mt-3 px-4"
+                    className=" btn btn-success btn btn-primary"
+                  >
+                    Learn More
+                  </Button>
                 </Link>
               </div>
             </div>

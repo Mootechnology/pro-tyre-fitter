@@ -3,6 +3,8 @@ import Carousel from "react-bootstrap/Carousel";
 import img1 from "../assets//images/Pro Tyre Fitter Home Page Banner 1-min.png";
 import img2 from "../assets//images/Pro Tyre Fitter Home Page Banner 2-min.png";
 import img3 from "../assets//images/Pro Tyre Fitter Home Page Banner 3-min.png";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 function CarouselPage() {
   return (
@@ -15,9 +17,16 @@ function CarouselPage() {
               We provide punctured tyre repair service everywhere you want.
             </h1>
             {/* <Link> */}
-            <a type="button" className="cta-home-btn" style={CTAButton} href="contact">
-              Learn More
-            </a>
+
+            <Link to="tel:442035041721">
+              <Button
+                variant="primary"
+                type="button"
+                className="mt-3 btn btn-success btn btn-primary CTAButton"
+              >
+                Call Us
+              </Button>
+            </Link>
             {/* </Link> */}
             {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
           </Carousel.Caption>
@@ -27,9 +36,16 @@ function CarouselPage() {
 
           <Carousel.Caption>
             <h1>Our staff is available 24/7 for your assistance.</h1>
-            <a type="button" className="cta-home-btn" style={CTAButton} href="contact">
-              Learn More
-            </a>
+
+            <Link to="tel:442035041721">
+              <Button
+                variant="primary"
+                type="button"
+                className="mt-3 btn btn-success btn btn-primary CTAButton"
+              >
+                Call Us
+              </Button>
+            </Link>
             {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
           </Carousel.Caption>
         </Carousel.Item>
@@ -38,9 +54,15 @@ function CarouselPage() {
 
           <Carousel.Caption>
             <h1>We offer emergency tyre repair service at your doorstep.</h1>
-            <a type="button" className="cta-home-btn" style={CTAButton} href="contact">
-              Learn More
-            </a>
+            <Link to="tel:442035041721">
+              <Button
+                variant="primary"
+                type="button"
+                className="mt-3 btn btn-success btn btn-primary CTAButton"
+              >
+                Call Us
+              </Button>
+            </Link>
             {/* <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p> */}
@@ -50,13 +72,13 @@ function CarouselPage() {
     </div>
   );
 }
-const CTAButton = {
-  padding: "8px 17px",
-  borderRadius: "7px",
-  backgroundColor: "#30a18b",
-  border: "none",
-  color: "white",
-  textDecoration: "none",
-};
+// const CTAButton = {
+//   padding: "8px 17px",
+//   borderRadius: "7px",
+//   backgroundColor: "#30a18b",
+//   border: "none",
+//   color: "white",
+//   textDecoration: "none",
+// };
 
 export default CarouselPage;

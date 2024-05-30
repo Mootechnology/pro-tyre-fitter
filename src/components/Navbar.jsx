@@ -89,22 +89,7 @@ function Navbar() {
                 >
                   Home
                 </NavLink>
-                <NavLink
-                  to="/about"
-                  className="nav-item nav-link"
-                  activeClassName="active"
-                  onClick={handleNavCollapse}
-                >
-                  About
-                </NavLink>
-                <NavLink
-                  to="/blogs"
-                  className="nav-item nav-link"
-                  activeClassName="active"
-                  onClick={handleNavCollapse}
-                >
-                  Blog
-                </NavLink>
+
                 <div className="nav-item dropdown">
                   <button
                     className="btn dropdown-toggle text-white px-0"
@@ -181,6 +166,14 @@ function Navbar() {
                   </div>
                 </div>
                 <NavLink
+                  to="/about"
+                  className="nav-item nav-link"
+                  activeClassName="active"
+                  onClick={handleNavCollapse}
+                >
+                  About
+                </NavLink>
+                <NavLink
                   to="/contact"
                   className="nav-item nav-link"
                   activeClassName="active"
@@ -193,6 +186,14 @@ function Navbar() {
                   activeClassName="active"
                 >
                   Faq
+                </NavLink>
+                <NavLink
+                  to="/blogs"
+                  className="nav-item nav-link"
+                  activeClassName="active"
+                  onClick={handleNavCollapse}
+                >
+                  Blog
                 </NavLink>
               </div>
             </div>

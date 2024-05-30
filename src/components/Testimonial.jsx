@@ -39,7 +39,7 @@ const Testimonial = () => {
             <div className="d-flex justify-content-center mb-4">
               <img
                 src={emma}
-                className="rounded-circle shadow-1-strong"
+                className="rounded-circle shadow-1-strong object-fit-cover"
                 width="150"
                 height="150"
               />

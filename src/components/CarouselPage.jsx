@@ -13,9 +13,7 @@ function CarouselPage() {
         <Carousel.Item>
           <img className="d-block w-100" src={img1} alt="First slide" />
           <Carousel.Caption>
-            <h1>
-              We provide punctured tyre repair service everywhere you want.
-            </h1>
+            <h1>On-Demand Punctured Tyre Repairs: Anytime, Anywhere!</h1>
             {/* <Link> */}
 
             <Link to="tel:442035041721">
@@ -53,7 +51,7 @@ function CarouselPage() {
           <img className="d-block w-100" src={img3} alt="Third slide" />
 
           <Carousel.Caption>
-            <h1>We offer emergency tyre repair service at your doorstep.</h1>
+            <h1>Emergency Tyre Repairs Delivered Right to Your Doorstep</h1>
             <Link to="tel:442035041721">
               <Button
                 variant="primary"

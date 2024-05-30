@@ -64,7 +64,9 @@ function ContactPage() {
   return (
     <div>
       <Helmet>
-        <title id="meta-title">Contact Us - Expert Tyre Services in London</title>
+        <title id="meta-title">
+          Contact Us - Expert Tyre Services in London
+        </title>
         <meta
           name="description"
           id="meta-description"
@@ -72,17 +74,17 @@ function ContactPage() {
         />
       </Helmet>
       {/* Banner Section */}
-      <header className="headerStyle" style={{ backgroundImage: 'none' }}>
-        <h1 style={{color:'black'}}>Contact Us</h1>
+      {/* <header className="headerStyle" style={{ backgroundImage: "none" }}>
+        <h1 style={{ color: "black" }}>Contact Us</h1>
         <h5>
           <Link to="/" className="linkStyle">
             <i className="fa-solid fa-house"></i> Home{" "}
           </Link>{" "}
-          | <span style={{color: 'black'}}>Contact</span>
+          | <span style={{ color: "black" }}>Contact</span>
         </h5>
-      </header>
+      </header> */}
 
-      <div className="mt-4">
+      <div className="mt-4 mt-100">
         <Row className="text-center justify-content-center">
           <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
             <div className="section-title">

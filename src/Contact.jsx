@@ -62,7 +62,7 @@ function ContactPage() {
   };
 
   return (
-    <div>
+    <div className="contact-page">
       <Helmet>
         <title id="meta-title">
           Contact Us - Expert Tyre Services in London
@@ -84,29 +84,28 @@ function ContactPage() {
         </h5>
       </header> */}
 
-      <div className="mt-4 mt-100">
-        <Row className="text-center justify-content-center">
-          <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
-            <div className="section-title">
-              <h2 className="sec-title">
-                We serve you regardless of time and place.
-              </h2>
-            </div>
-          </div>
-        </Row>
-        <div className="para-width mx-auto mt-3">
-          <ul>
-            <li>Your safety comes first to us.</li>
-            <li>Our expert are always available to assist you.</li>
-            <li>
-              Our professionals are ready 24/7 to solve your tyre problem and
-              help you get back on your journey.
-            </li>
-          </ul>
-        </div>
-      </div>
-
       <Container className="py-5">
+        <div className="mt-4 mt-100">
+          <Row className="text-center justify-content-center">
+            <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
+              <div className="section-title">
+                <h2 className="sec-title">
+                  We serve you regardless of time and place.
+                </h2>
+              </div>
+            </div>
+          </Row>
+          <div className=" mx-auto mt-3">
+            <ul>
+              <li>Your safety comes first to us.</li>
+              <li>Our expert are always available to assist you.</li>
+              <li>
+                Our professionals are ready 24/7 to solve your tyre problem and
+                help you get back on your journey.
+              </li>
+            </ul>
+          </div>
+        </div>
         <Row>
           <Col md={6}>
             <h2 className="text-success">Contact Us</h2>

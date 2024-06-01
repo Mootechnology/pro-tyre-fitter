@@ -77,7 +77,7 @@ const Footer = () => {
               <div className="d-flex flex-column align-items-start">
                 <h4 className="mb-3">Contact Information</h4>
                 <div className="mb-2">
-                  <strong>Phone:</strong> +44 2035041721
+                  <strong>Phone:</strong> +44 2035041723
                 </div>
                 <div className="mb-3">
                   <strong>Email:</strong> info@protyrefitters.co.uk

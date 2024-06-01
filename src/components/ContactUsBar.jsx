@@ -26,7 +26,7 @@ const ContactUsBar = () => {
               <i class="fa-solid fa-envelope fa-2xl"></i>
               <h5 className="mt-3 text-success">Get in Touch</h5>
               <p className="text-center">
-                <b>+44 2035041721</b> <br />
+                <b>+44 2035041723</b> <br />
                 info@protyrefitters.com <br />
               </p>
             </Col>

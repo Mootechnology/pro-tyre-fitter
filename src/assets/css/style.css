@@ -241,12 +241,17 @@ body {
   z-index: 999;
   background-color: var(--bs-success) !important;
 }
-
+.contact-page {
+  margin-top: 10rem;
+}
 @media (max-width: 991px) {
   .main-nav-bar {
     position: fixed;
     top: 0;
     z-index: 999;
+  }
+  .contact-page {
+    margin-top: 5rem;
   }
 }
 

@@ -105,7 +105,7 @@ function BlogPage() {
         <div className='para-width mx-auto text-center'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, pariatur quidem.</p></div>
      </div>
 
-      <Container className="py-5">
+      {/* <Container className="py-5">
         {posts.map(post => (
           <Row key={post.id} className="mt-4">
             <Col md={6} className='d-flex justify-content-center'>
@@ -120,7 +120,7 @@ function BlogPage() {
             </Col>
           </Row>
         ))}
-      </Container>
+      </Container> */}
     </div>
   );
 }

@@ -21,7 +21,7 @@ const Banner = () => {
                 <div><i class="fa-solid fa-envelope fa-2xl"></i></div>
                 <div>
                   <span className="d-block text-white">For Email Enquiry</span>
-                  <h5 className="tc-text-color">contact@protyrefitters.com</h5>
+                  <h5 className="tc-text-color">info@protyrefitters.com</h5>
                   <span className="d-block text-white">We are present 24/7</span>
                 </div>
               </div>
@@ -31,7 +31,7 @@ const Banner = () => {
                 <div><i className="fa-solid fa-phone fa-2xl"></i></div>
                 <div>
                   <span className="d-block text-white">For Booking Rides</span>
-                  <h5 className="tc-text-color">+44 7883 846758</h5>
+                  <h5 className="tc-text-color">+44 2035 041721</h5>
                   <span className="d-block text-white">We are present 24/7</span>
                 </div>
               </div>

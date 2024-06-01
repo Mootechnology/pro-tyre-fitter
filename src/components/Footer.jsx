@@ -66,9 +66,6 @@ const Footer = () => {
                 <Link to="/faqs" className="footer-link">
                   FAQs
                 </Link>
-                <Link to="/contact" className="footer-link">
-                  Contact
-                </Link>
               </ul>
             </div>
             {/* 4 */}

@@ -165,6 +165,79 @@ function Navbar() {
                     </Link>
                   </div>
                 </div>
+
+                {/* Areas */}
+                <div className="nav-item dropdown">
+                  <button
+                    className="btn dropdown-toggle text-white px-0"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Areas
+                  </button>
+                  <div className="dropdown-menu m-0">
+                    <Link
+                      to="/areas/luton"
+                      className="dropdown-item"
+                      onClick={handleNavCollapse}
+                    >
+                      Luton
+                    </Link>
+                    {/* <Link
+                      to="/services/mobile-tyre-repair"
+                      className="dropdown-item"
+                      onClick={handleNavCollapse}
+                    >
+                      Area 2
+                    </Link>
+                    <Link
+                      to="/services/tyre-replacement"
+                      className="dropdown-item"
+                      onClick={handleNavCollapse}
+                    >
+                      Area 3
+                    </Link>
+                    <Link
+                      to="/services/flat-tyre"
+                      className="dropdown-item"
+                      onClick={handleNavCollapse}
+                    >
+                      Area 4
+                    </Link>
+                    <Link
+                      to="/services/burst-tyre"
+                      className="dropdown-item"
+                      onClick={handleNavCollapse}
+                    >
+                      Area 5
+                    </Link>
+                    <Link
+                      to="/services/part-worn-tyre"
+                      className="dropdown-item"
+                      onClick={handleNavCollapse}
+                    >
+                      Area 6
+                    </Link>
+                    <Link
+                      to="/services/jumpstart"
+                      className="dropdown-item"
+                      onClick={handleNavCollapse}
+                    >
+                      Area 7
+                    </Link>
+                    <Link
+                      to="/services/locknut-wheel-removal"
+                      className="dropdown-item"
+                      onClick={handleNavCollapse}
+                    >
+                      Area 8
+                    </Link> */}
+                    
+                  </div>
+                </div>
+                {/* Areas */}
+
                 <NavLink
                   to="/about"
                   className="nav-item nav-link"
@@ -333,6 +406,34 @@ function Navbar() {
                           </div>
                         </div>
                       </div>
+
+                      {/* Areas */}
+                      <div className="nav-item dropdown">
+                        <Link
+                          to="/services/mobile-tyre-fitting"
+                          className="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                        >
+                          Areas
+                        </Link>
+                        <div className="dropdown-menu new-dropdown-menu m-0">
+                          <div className="row">
+                            <div className="col">
+                              <Link to="/areas/luton" className="dropdown-item">Luton</Link>
+                              {/* <Link to="/services/mobile-tyre-repair" className="dropdown-item">Area 2</Link>
+                              <Link to="/services/tyre-replacement" className="dropdown-item">Area 3</Link>
+                              <Link to="/services/flat-tyre" className="dropdown-item">Area 4</Link> */}
+                            </div>
+                            <div className="col">
+                              {/* <Link to="/services/burst-tyre" className="dropdown-item">Area 5</Link>
+                              <Link to="/services/part-worn-tyre" className="dropdown-item">Area 6</Link>
+                              <Link to="/services/jumpstart" className="dropdown-item">Area 7</Link>
+                              <Link to="/services/locknut-wheel-removal" className="dropdown-item">Area 8</Link> */}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {/* Areas */}
                       <NavLink
                         to="/blogs"
                         className="nav-item nav-link"

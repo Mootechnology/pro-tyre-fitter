@@ -26,6 +26,7 @@ import LocknutWheel from "./LocknutWheel";
 import MobileBreakdown from "./MobileBreakdown";
 import RegisterPage from "./register";
 import ScrollToTop from "react-scroll-to-top";
+import Luton from "./Luton";
 
 const App = () => {
   useEffect(() => {
@@ -86,6 +87,7 @@ const App = () => {
           <Route path="/services/register" element={<RegisterPage />} />
 
           <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/areas/luton" element={<Luton />} />
         </Routes>
         <Footer />
       </Router>

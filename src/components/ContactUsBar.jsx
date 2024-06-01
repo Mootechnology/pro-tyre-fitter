@@ -37,8 +37,8 @@ const ContactUsBar = () => {
               <i class="fa-solid fa-clock fa-2xl"></i>
               <h5 className="mt-3 text-success">Customer Support</h5>
               <p className="text-center">
-                <b>Mon to Sat:</b> 09:00am - 08:00pm <br />
-                <b>Sunday:</b> 10:00am - 06:00pm
+                <b>Mon to Sat:</b> 24 Hours <br />
+                <b>Sunday:</b> 24 Hours
               </p>
             </Col>
           </Row>

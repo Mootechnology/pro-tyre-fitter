@@ -131,6 +131,19 @@ export default function WithContactForm() {
               <div>
                 <p className="mb-1">
                   <strong className="text-success">
+                  Can a mobile tyre fitter do a wheel alignment?
+                  </strong>
+                </p>
+                <p className="mb-1">
+                  <p>
+                  Yes, a mobile tyre fitters make sure wheel alignment issues with manage other tyre related issues
+                  </p>
+                </p>
+              </div>
+
+              <div>
+                <p className="mb-1">
+                  <strong className="text-success">
                     How do I protect my tyres from damage?
                   </strong>
                 </p>
@@ -141,6 +154,33 @@ export default function WithContactForm() {
                   </p>
                 </p>
               </div>
+
+              <div>
+                <p className="mb-1">
+                  <strong className="text-success">
+                  Is mobile tyre expensive?
+                  </strong>
+                </p>
+                <p className="mb-1">
+                  <p>
+                  Mobile tyre fitting service is less expensive than garage based service. It is also protected against physical stress.
+                  </p>
+                </p>
+              </div>
+
+              <div>
+                <p className="mb-1">
+                  <strong className="text-success">
+                  How many miles does a tyre cover?
+                  </strong>
+                </p>
+                <p className="mb-1">
+                  <p>
+                  Front tyres cover 20,000 miles and rear tyres 40,000 miles, further factors such as weather and maintenance also affect performance.
+                  </p>
+                </p>
+              </div>
+
             </MDBCol>
             <MDBCol lg="6" md="12" className="text-center mb-3">
               <p>

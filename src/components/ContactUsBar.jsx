@@ -14,9 +14,9 @@ const ContactUsBar = () => {
               <i className="fa-solid fa-location-dot fa-2xl"></i>
               <h5 className="mt-3 text-success">Corporate Office</h5>
               <p className="text-center">
-                702 Main St, West Columbia <br />
-                South Carolina, 29170 <br />
-                United States
+                10-16 tiller road, <br />
+                canary wharf, <br />
+                E14 8PX
               </p>
             </Col>
             <Col
@@ -27,8 +27,7 @@ const ContactUsBar = () => {
               <h5 className="mt-3 text-success">Get in Touch</h5>
               <p className="text-center">
                 <b>+44 2035041721</b> <br />
-                person@company.com <br />
-                person@company.com
+                info@protyrefitters.com <br />
               </p>
             </Col>
             <Col

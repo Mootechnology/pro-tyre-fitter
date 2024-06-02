@@ -1,8 +1,8 @@
 import React from "react";
 
-import emma from "../../public/images/testimonials/emma.jpg";
-import john from "../../public/images/testimonials/john.jpg";
-import maria from "../../public/images/testimonials/maria.jpg";
+// import emma from "../../public/images/testimonials/emma.jpg";
+// import john from "../../public/images/testimonials/john.jpg";
+// import maria from "../../public/images/testimonials/maria.jpg";
 import {
   MDBCol,
   MDBContainer,
@@ -24,7 +24,7 @@ const Testimonial = () => {
                 </div>
               </div>
             </div>
-            <div className="para-width mx-auto">
+            <div className="para-width mx-auto d-flex justify-content-center align-items-center">
               <p>
                 These are our Monthly Top Clients and their reviews about our
                 service
@@ -36,14 +36,14 @@ const Testimonial = () => {
       <MDBContainer className="py-5">
         <MDBRow className="text-center">
           <MDBCol md="4" className="mb-5 mb-md-0">
-            <div className="d-flex justify-content-center mb-4">
+            {/* <div className="d-flex justify-content-center mb-4">
               <img
                 src={emma}
                 className="rounded-circle shadow-1-strong object-fit-cover"
                 width="150"
                 height="150"
               />
-            </div>
+            </div> */}
             <h5 className="mb-3">Emma Davis</h5>
             <p className="px-xl-3">
               <MDBIcon fas icon="quote-left" className="pe-2" />
@@ -77,14 +77,14 @@ const Testimonial = () => {
             </MDBTypography>
           </MDBCol>
           <MDBCol md="4" className="mb-5 mb-md-0">
-            <div className="d-flex justify-content-center mb-4">
+            {/* <div className="d-flex justify-content-center mb-4">
               <img
                 src={maria}
                 className="rounded-circle shadow-1-strong"
                 width="150"
                 height="150"
               />
-            </div>
+            </div> */}
             <h5 className="mb-3">Maria Evans</h5>
             <p className="px-xl-3">
               <MDBIcon fas icon="quote-left" className="pe-2" />
@@ -113,14 +113,14 @@ const Testimonial = () => {
             </MDBTypography>
           </MDBCol>
           <MDBCol md="4" className="mb-5 mb-md-0">
-            <div className="d-flex justify-content-center mb-4">
+            {/* <div className="d-flex justify-content-center mb-4">
               <img
                 src={john}
                 className="rounded-circle shadow-1-strong"
                 width="150"
                 height="150"
               />
-            </div>
+            </div> */}
             <h5 className="mb-3">John Smith</h5>
             <p className="px-xl-3">
               <MDBIcon fas icon="quote-left" className="pe-2" />

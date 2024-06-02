@@ -18,6 +18,19 @@ function Navbar() {
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
+  const [menuVisibility, setMenuVisibility] = useState({
+    hertfordshire: false,
+    london: false,
+  });
+
+  const toggleMenu = (menu) => {
+    setMenuVisibility((prevVisibility) => ({
+      ...prevVisibility,
+      [menu]: !prevVisibility[menu],
+    }));
+  };
+  
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the route changes
 
@@ -51,7 +64,7 @@ function Navbar() {
     return (
       <>
         <Helmet>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         </Helmet>
         <Topheader />
 
@@ -409,28 +422,40 @@ function Navbar() {
 
                       {/* Areas */}
                       <div className="nav-item dropdown">
-                        <Link
-                          to="/services/mobile-tyre-fitting"
+                        <button
                           className="nav-link dropdown-toggle"
+                          type="button"
                           data-bs-toggle="dropdown"
+                          aria-expanded="false"
                         >
                           Areas
-                        </Link>
-                        <div className="dropdown-menu new-dropdown-menu m-0">
-                          <div className="row">
-                            <div className="col">
-                              <Link to="/areas/luton" className="dropdown-item">Luton</Link>
-                              {/* <Link to="/services/mobile-tyre-repair" className="dropdown-item">Area 2</Link>
-                              <Link to="/services/tyre-replacement" className="dropdown-item">Area 3</Link>
-                              <Link to="/services/flat-tyre" className="dropdown-item">Area 4</Link> */}
+                        </button>
+                        <div className="dropdown-menu m-0">
+                            {/* Dropend */}
+                            <div className="btn-group px-4">
+                              <button className="btn harea-btn" onClick={() => toggleMenu('hertfordshire')}>
+                                Hertfordshire
+                              </button>
+                              {menuVisibility.hertfordshire && (
+                                <ul className="harea-menu mt-4 rounded">
+                                  <Link to="/areas/luton" className="dropdown-item">Luton</Link>
+                                </ul>
+                              )}
                             </div>
-                            <div className="col">
-                              {/* <Link to="/services/burst-tyre" className="dropdown-item">Area 5</Link>
-                              <Link to="/services/part-worn-tyre" className="dropdown-item">Area 6</Link>
-                              <Link to="/services/jumpstart" className="dropdown-item">Area 7</Link>
-                              <Link to="/services/locknut-wheel-removal" className="dropdown-item">Area 8</Link> */}
+                            {/* Dropend */}
+
+                            {/* Dropend */}
+                            <div className="btn-group px-4">
+                              <button className="btn harea-btn" onClick={() => toggleMenu('london')}>
+                                London
+                              </button>
+                              {menuVisibility.london && (
+                                <ul className="harea-menu mt-4 rounded">
+                                  <Link className="dropdown-item">something</Link>
+                                </ul>
+                              )}
                             </div>
-                          </div>
+                            {/* Dropend */}
                         </div>
                       </div>
                       {/* Areas */}

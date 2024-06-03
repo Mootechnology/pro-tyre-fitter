@@ -155,8 +155,9 @@ const Home = () => {
           </Col>
         </Row>
       </section>
-
+      
       <Testimonial />
+
       <HowSection />
       <CTA ctaText="Share your tyre-related issues with our experts. Our professionals reach your location no matter where you are, and when you need help, they help you at your home, workplace and roadside. Call us today to tackle your tyre problem and solve it with the best possible solution." />
       <Banner />

@@ -434,7 +434,7 @@ function Navbar() {
                             {/* Dropend */}
                             <div className="btn-group px-4">
                               <button className="btn harea-btn" onClick={() => toggleMenu('hertfordshire')}>
-                                Hertfordshire
+                                <div className="d-flex justify-content-center align-items-center">Hertfordshire <small><i class="fa-solid fa-greater-than fa-2xs"></i></small></div>
                               </button>
                               {menuVisibility.hertfordshire && (
                                 <ul className="harea-menu mt-4 rounded">
@@ -447,7 +447,7 @@ function Navbar() {
                             {/* Dropend */}
                             <div className="btn-group px-4">
                               <button className="btn harea-btn" onClick={() => toggleMenu('london')}>
-                                London
+                              <div className="d-flex justify-content-center align-items-center">London <small><i class="fa-solid fa-greater-than fa-2xs"></i></small></div> 
                               </button>
                               {menuVisibility.london && (
                                 <ul className="harea-menu mt-4 rounded">

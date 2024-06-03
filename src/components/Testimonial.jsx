@@ -11,6 +11,8 @@ import {
   MDBTypography,
 } from "mdb-react-ui-kit";
 
+import { Container, Row, Col } from "react-bootstrap";
+
 const Testimonial = () => {
   return (
     <>
@@ -20,7 +22,7 @@ const Testimonial = () => {
             <div className="row text-center justify-content-center">
               <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
                 <div className="section-title">
-                  <h2 className="sec-title">Testimonials</h2>
+                  <h2 className="sec-title">Customer Reviews</h2>
                 </div>
               </div>
             </div>
@@ -31,6 +33,34 @@ const Testimonial = () => {
               </p>
             </div>
           </div>
+          
+          <Container>
+        <Row>
+          <Col md={6}>
+            <h5>Rating</h5>
+            <div style={{color: 'white'}}>
+              <span style={{color: 'black'}}>4.5</span>
+              <i class="fa-solid fa-star bg-success p-1"></i>
+              <i class="fa-solid fa-star bg-success p-1"></i>
+              <i class="fa-solid fa-star bg-success p-1"></i>
+              <i class="fa-solid fa-star bg-success p-1"></i>
+              <i class="fa-regular fa-star-half-stroke bg-success p-1"></i>
+            </div>
+          </Col>
+          <Col md={6}>
+            <h5>Google Rating</h5>
+            <div style={{color: 'gold'}}>
+              <span style={{color: 'black'}}>5</span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+        
         </MDBCol>
       </MDBRow>
       <MDBContainer className="py-5">

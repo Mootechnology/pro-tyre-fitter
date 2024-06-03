@@ -13,19 +13,22 @@ const topheader = () => {
             >
               <a
                 className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                href=""
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61559886946787"
               >
                 <i className="fab fa-facebook-f fw-normal"></i>
               </a>
               <a
                 className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                href=""
+                target="_blank"
+                href="https://www.linkedin.com/in/protyre-fitters-5025a9310/"
               >
                 <i className="fab fa-linkedin-in fw-normal"></i>
               </a>
               <a
                 className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                href=""
+                target="_blank"
+                href="https://www.instagram.com/protyrefitters/"
               >
                 <i className="fab fa-instagram fw-normal"></i>
               </a>

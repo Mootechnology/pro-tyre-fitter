@@ -29,6 +29,8 @@ import ScrollToTop from "react-scroll-to-top";
 import Luton from "./Luton";
 import StAlbans from "./StAlbans";
 import Harlow from "./Harlow";
+import Hatfield from "./Hatfield";
+import PottersBar from "./PottersBar";
 
 const App = () => {
   useEffect(() => {
@@ -92,6 +94,8 @@ const App = () => {
           <Route path="/areas/luton" element={<Luton />} />
           <Route path="/areas/st-albans" element={<StAlbans />} />
           <Route path="/areas/harlow" element={<Harlow />} />
+          <Route path="/areas/hatfield" element={<Hatfield />} />
+          <Route path="/areas/potters-bar" element={<PottersBar />} />
         </Routes>
         <Footer />
       </Router>

@@ -27,6 +27,8 @@ import MobileBreakdown from "./MobileBreakdown";
 import RegisterPage from "./register";
 import ScrollToTop from "react-scroll-to-top";
 import Luton from "./Luton";
+import StAlbans from "./StAlbans";
+import Harlow from "./Harlow";
 
 const App = () => {
   useEffect(() => {
@@ -88,6 +90,8 @@ const App = () => {
 
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/areas/luton" element={<Luton />} />
+          <Route path="/areas/st-albans" element={<StAlbans />} />
+          <Route path="/areas/harlow" element={<Harlow />} />
         </Routes>
         <Footer />
       </Router>

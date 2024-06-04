@@ -195,7 +195,7 @@ function Navbar() {
                       className="dropdown-item"
                       onClick={handleNavCollapse}
                     >
-                      Luton
+                      Hertfordshire - Luton
                     </Link>
                     {/* <Link
                       to="/services/mobile-tyre-repair"
@@ -438,7 +438,11 @@ function Navbar() {
                               </button>
                               {menuVisibility.hertfordshire && (
                                 <ul className="harea-menu mt-4 rounded">
+                                  <Link to="/areas/st-albans" className="dropdown-item">St-Albans</Link>
                                   <Link to="/areas/luton" className="dropdown-item">Luton</Link>
+                                  <Link to="/areas/harlow" className="dropdown-item">Harlow</Link>             
+                                  <Link to="/areas/hatfield" className="dropdown-item">Hatfield</Link>             
+                                  <Link to="/areas/potters-bar" className="dropdown-item">Potters Bar</Link>             
                                 </ul>
                               )}
                             </div>

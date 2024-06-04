@@ -455,7 +455,14 @@ function Navbar() {
                               </button>
                               {menuVisibility.london && (
                                 <ul className="harea-menu mt-4 rounded">
-                                  <Link className="dropdown-item">something</Link>
+                                  <Link to="/areas/ilford" className="dropdown-item">Ilford</Link>
+                                  <Link to="/areas/edmonton" className="dropdown-item">Edmonton</Link>
+                                  <Link to="/areas/wangsted" className="dropdown-item">Wangsted</Link>
+                                  <Link to="/areas/chingford" className="dropdown-item">Chingford</Link>
+                                  <Link to="/areas/woodford-green" className="dropdown-item">Woodford Green</Link>
+                                  <Link to="/areas/barnet" className="dropdown-item">Barnet</Link>
+                                  <Link to="/areas/woodgreen" className="dropdown-item">Woodgreen</Link>
+                                  <Link to="/areas/hoddesdon" className="dropdown-item">Hoddesdon</Link>
                                 </ul>
                               )}
                             </div>

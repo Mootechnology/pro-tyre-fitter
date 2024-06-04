@@ -29,6 +29,21 @@ import ScrollToTop from "react-scroll-to-top";
 import Luton from "./Luton";
 import StAlbans from "./StAlbans";
 import Harlow from "./Harlow";
+import HemelHempStead from "./Hemel HempStead";
+import Cheshunt from "./Cheshunt";
+import Codicote from "./Codicote";
+import LondonColney from "./London Colney";
+import KingsLangley from "./Kings Langley";
+import WheatHampstead from "./WheatHampstead";
+import AbbotsLangley from "./Abbots Langley";
+import Broxbourne from "./Broxbourne";
+import Borehamwood from "./Borehamwood";
+import SouthMimms from "./South Mimms";
+import Cuffley from "./Cuffley";
+import Ware from "./Ware";
+
+
+
 
 const App = () => {
   useEffect(() => {
@@ -92,6 +107,21 @@ const App = () => {
           <Route path="/areas/luton" element={<Luton />} />
           <Route path="/areas/st-albans" element={<StAlbans />} />
           <Route path="/areas/harlow" element={<Harlow />} />
+          <Route path="/areas/hemelhempstead" element={<HemelHempStead />} />
+          <Route path="/areas/cheshunt" element={<Cheshunt />} />
+          <Route path="/areas/codicote" element={<Codicote />} />
+          <Route path="/areas/londoncolney" element={<LondonColney />} />
+          <Route path="/areas/kingslangley" element={<KingsLangley />} />
+          <Route path="/areas/wheathampstead" element={<WheatHampstead />} />
+          <Route path="/areas/abbotslangley" element={<AbbotsLangley />} />
+          <Route path="/areas/broxbourne" element={<Broxbourne />} />
+          <Route path="/areas/borehamwood" element={<Borehamwood />} />
+          <Route path="/areas/southmimms" element={<SouthMimms />} />
+          <Route path="/areas/cuffley" element={<Cuffley />} />
+          <Route path="/areas/ware" element={<Ware />} />
+
+
+
         </Routes>
         <Footer />
       </Router>

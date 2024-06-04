@@ -434,7 +434,7 @@ function Navbar() {
                             {/* Dropend */}
                             <div className="btn-group px-4">
                               <button className="btn harea-btn" onClick={() => toggleMenu('hertfordshire')}>
-                                <div className="d-flex justify-content-center align-items-center">Hertfordshire <small><i class="fa-solid fa-greater-than fa-2xs"></i></small></div>
+                                <div className="d-flex justify-content-center align-items-center">Hertfordshire <small><i class="fa-solid fa-greater-than fa-3xs"></i></small></div>
                               </button>
                               {menuVisibility.hertfordshire && (
                                 <ul className="harea-menu mt-4 rounded">
@@ -442,7 +442,22 @@ function Navbar() {
                                   <Link to="/areas/luton" className="dropdown-item">Luton</Link>
                                   <Link to="/areas/harlow" className="dropdown-item">Harlow</Link>             
                                   <Link to="/areas/hatfield" className="dropdown-item">Hatfield</Link>             
-                                  <Link to="/areas/potters-bar" className="dropdown-item">Potters Bar</Link>             
+                                  <Link to="/areas/potters-bar" className="dropdown-item">Potters Bar</Link> 
+                                  <Link to="/areas/hemelhempstead" className="dropdown-item">Hemel Hempstead</Link>             
+                                  <Link to="/areas/cheshunt" className="dropdown-item">Cheshunt</Link>      
+                                  <Link to="/areas/codicote" className="dropdown-item">Codicote</Link> 
+                                  <Link to="/areas/londoncolney" className="dropdown-item">London Colney</Link>             
+                                  <Link to="/areas/kingslangley" className="dropdown-item">Kings Langley</Link>             
+                                  <Link to="/areas/wheathampstead" className="dropdown-item">Wheathampstead</Link>             
+                                  <Link to="/areas/abbotslangley" className="dropdown-item">Abbots Langley</Link>             
+                                  <Link to="/areas/broxbourne" className="dropdown-item">Broxbourne</Link>             
+                                  <Link to="/areas/borehamwood" className="dropdown-item">Borehamwood</Link>             
+                                  <Link to="/areas/southmimms" className="dropdown-item">South Mimms</Link>             
+                                  <Link to="/areas/cuffley" className="dropdown-item">Cuffley</Link>             
+                                  <Link to="/areas/ware" className="dropdown-item">Ware</Link>             
+
+       
+
                                 </ul>
                               )}
                             </div>

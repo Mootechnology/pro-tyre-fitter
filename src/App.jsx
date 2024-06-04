@@ -41,9 +41,16 @@ import Borehamwood from "./Borehamwood";
 import SouthMimms from "./South Mimms";
 import Cuffley from "./Cuffley";
 import Ware from "./Ware";
-
-
-
+import Hatfield from "./Hatfield";
+import PottersBar from "./PottersBar";
+import Ilford from "./Ilford";
+import Edmonton from "./Edmonton";
+import Wangsted from "./Wangsted";
+import Chingford from "./Chingford";
+import WoodfordGreen from "./WoodfordGreen";
+import Barnet from "./Barnet";
+import Woodgreen from "./Woodgreen";
+import Hoddesdon from "./Hoddesdon";
 
 const App = () => {
   useEffect(() => {
@@ -119,9 +126,16 @@ const App = () => {
           <Route path="/areas/southmimms" element={<SouthMimms />} />
           <Route path="/areas/cuffley" element={<Cuffley />} />
           <Route path="/areas/ware" element={<Ware />} />
-
-
-
+          <Route path="/areas/hatfield" element={<Hatfield />} />
+          <Route path="/areas/potters-bar" element={<PottersBar />} />
+          <Route path="/areas/ilford" element={<Ilford />} />
+          <Route path="/areas/edmonton" element={<Edmonton />} />
+          <Route path="/areas/wangsted" element={<Wangsted />} />
+          <Route path="/areas/chingford" element={<Chingford />} />
+          <Route path="/areas/woodford-green" element={<WoodfordGreen />} />
+          <Route path="/areas/barnet" element={<Barnet />} />
+          <Route path="/areas/woodgreen" element={<Woodgreen />} />
+          <Route path="/areas/hoddesdon" element={<Hoddesdon />} />
         </Routes>
         <Footer />
       </Router>

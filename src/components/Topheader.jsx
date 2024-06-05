@@ -32,6 +32,13 @@ const topheader = () => {
               >
                 <i className="fab fa-instagram fw-normal"></i>
               </a>
+              <a
+                className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+                target="_blank"
+                href="https://x.com/ProtyreFitters"
+              >
+                <i className="fab fa-twitter fw-normal"></i>
+              </a>
             </div>
           </div>
           <div className="col-lg-4 text-center text-lg-end">

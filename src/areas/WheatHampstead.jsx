@@ -1,16 +1,16 @@
 import React from 'react'
-import AreasPage from "./AreasPage";
-import About1 from "./assets/images/about1.png";
+import AreasPage from "../AreasPage";
+import About1 from "../assets/images/about1.png";
 
-const Luton = () => {
+const WheatHampstead = () => {
   return (
     <>
       <AreasPage
       mergedHeaderStyle="tr"
       // Text
-      pageTitle="Luton"
-      firstHeading='Amica & Commode Mobile Tyre Fitting Luton.'
-      secondHeading="Mobile Tyre Fitting in & Around Luton"
+      pageTitle="Wheathampstead"
+      firstHeading='Amica & Commode Mobile Tyre Fitting Wheathampstead.'
+      secondHeading="Mobile Tyre Fitting in & Around Wheathampstead"
       img1={About1}
       lione='One'
       litwo='Two'
@@ -28,4 +28,4 @@ const Luton = () => {
   )
 }
 
-export default Luton
+export default WheatHampstead

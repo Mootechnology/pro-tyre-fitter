@@ -26,31 +26,32 @@ import LocknutWheel from "./LocknutWheel";
 import MobileBreakdown from "./MobileBreakdown";
 import RegisterPage from "./register";
 import ScrollToTop from "react-scroll-to-top";
-import Luton from "./Luton";
-import StAlbans from "./StAlbans";
-import Harlow from "./Harlow";
-import HemelHempStead from "./Hemel HempStead";
-import Cheshunt from "./Cheshunt";
-import Codicote from "./Codicote";
-import LondonColney from "./London Colney";
-import KingsLangley from "./Kings Langley";
-import WheatHampstead from "./WheatHampstead";
-import AbbotsLangley from "./Abbots Langley";
-import Broxbourne from "./Broxbourne";
-import Borehamwood from "./Borehamwood";
-import SouthMimms from "./South Mimms";
-import Cuffley from "./Cuffley";
-import Ware from "./Ware";
-import Hatfield from "./Hatfield";
-import PottersBar from "./PottersBar";
-import Ilford from "./Ilford";
-import Edmonton from "./Edmonton";
-import Wangsted from "./Wangsted";
-import Chingford from "./Chingford";
-import WoodfordGreen from "./WoodfordGreen";
-import Barnet from "./Barnet";
-import Woodgreen from "./Woodgreen";
-import Hoddesdon from "./Hoddesdon";
+import Luton from "./areas/Luton";
+import StAlbans from "./areas/StAlbans";
+import Harlow from "./areas/Harlow";
+import HemelHempStead from "./areas/Hemel HempStead";
+import Cheshunt from "./areas/Cheshunt";
+import Codicote from "./areas/Codicote";
+import LondonColney from "./areas/London Colney";
+import KingsLangley from "./areas/Kings Langley";
+import WheatHampstead from "./areas/WheatHampstead";
+import AbbotsLangley from "./areas/Abbots Langley";
+import Broxbourne from "./areas/Broxbourne";
+import Borehamwood from "./areas/Borehamwood";
+import SouthMimms from "./areas/South Mimms";
+import Cuffley from "./areas/Cuffley";
+import Ware from "./areas/Ware";
+import Hatfield from "./areas/Hatfield";
+import PottersBar from "./areas/PottersBar";
+import Ilford from "./areas/Ilford";
+import Edmonton from "./areas/Edmonton";
+import Wangsted from "./areas/Wangsted";
+import Chingford from "./areas/Chingford";
+import WoodfordGreen from "./areas/WoodfordGreen";
+import Barnet from "./areas/Barnet";
+import Woodgreen from "./areas/Woodgreen";
+import Hoddesdon from "./areas/Hoddesdon";
+import Blog1 from "./blog1";
 
 const App = () => {
   useEffect(() => {
@@ -136,6 +137,8 @@ const App = () => {
           <Route path="/areas/barnet" element={<Barnet />} />
           <Route path="/areas/woodgreen" element={<Woodgreen />} />
           <Route path="/areas/hoddesdon" element={<Hoddesdon />} />
+          {/* Blog */}
+          <Route path="/blogs/Tips-for-Choosing-the-Right-Mobile-Tyre-Fitting-Service" element={<Blog1 />} />
         </Routes>
         <Footer />
       </Router>

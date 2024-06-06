@@ -68,17 +68,17 @@ function BlogPage() {
                 </div>
             </div>
         </Row>
-        <div className='para-width mx-auto'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit fermentum justo. Vestibulum feugiat vehicula elit, at congue orci venenatis nec. Morbi hendrerit mauris vel arcu hendrerit, nec tristique purus auctor. Nullam euismod nunc nec dictum tempus. Integer malesuada felis vel justo aliquet, a tincidunt arcu vulputate. Quisque suscipit, ligula eu pharetra scelerisque, tortor ligula aliquam felis.</p></div>
+        <div className='para-width mx-auto'><p className='text-center'>Read the informative, technical and most usful blogs with all the information you need abot tyre fitting.</p></div>
      </div>
      
-     <Container>
+     <Container className='mb-3'>
       <Row className="justify-content-center">
         <Col md={6} className="image-container mt-3">
           <img src="images/img-11.jpg" alt="Image 1" className="img-fluid" />
           <div className="text-container">
-            <h4>Heading Goes Here</h4>
-            <p>Some kind of subheading</p>
-            <Link to="/" className='btn btn-success'>Read More</Link>
+            <h4>Tips for Choosing the Right Mobile Tyre Fitting Service</h4>
+            <p>Are you fed up with your tyre problems and looking for a solution to ease your worries? Tyre-related problems disrupt travel routines and affect work, causing unexpected stress and incidents. It can occur for many reasons, like lack of maintenance, extreme weather, and bad road conditions, but finding the solution is another task for a person. Pro Tyre Fitters is a platform that deals with all tyre-related problems and provides the best quick solutions. Our professionals are ready  24/7 to deal with the emergency. Here are some tips to help you choose the right mobile tyre fitting service for your vehicle.</p>
+            <Link to="/blogs/Tips-for-Choosing-the-Right-Mobile-Tyre-Fitting-Service" className='btn btn-success'>Read More</Link>
           </div>
         </Col>
         <Col md={6} className="image-container mt-3">
@@ -94,7 +94,7 @@ function BlogPage() {
 
       {/* Main Content */}
       
-      <div className='mt-4' style={{marginBottom: '-50px'}}>
+      {/* <div className='mt-4' style={{marginBottom: '-50px'}}>
         <Row className="text-center justify-content-center">
             <div className="col-md-11 col-lg-9 col-xl-7 mb-2">
                 <div className="section-title">
@@ -103,7 +103,7 @@ function BlogPage() {
             </div>
         </Row>
         <div className='para-width mx-auto text-center'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, pariatur quidem.</p></div>
-     </div>
+     </div> */}
 
       {/* <Container className="py-5">
         {posts.map(post => (

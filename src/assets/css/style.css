@@ -1372,3 +1372,16 @@ footer {
   z-index: 1000;
   background-color: #dddddd;
 }
+
+.ptf-hero{
+  margin-top: 140px;
+  background-image: url('../images/banners/bg.png');
+  background-repeat: no-repeat;
+  padding: 6.5rem 0;
+}
+
+@media(max-width: 768px){
+  .ptf-hero{
+    margin-top: 45px !important;
+  }
+}

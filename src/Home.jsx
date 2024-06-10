@@ -47,8 +47,23 @@ const Home = () => {
           id="meta-description"
           content="Expert mobile tyre fitting in London. Convenient, reliable, and efficient service. Get back on the road ASAP. Call us now!"
         />
+        <link rel="canonical" href="https://protyrefitters.co.uk/" />
       </Helmet>
-      <CarouselPage />
+      {/* <CarouselPage /> */}
+
+      <section className="ptf-hero">
+        <div className="container">
+          <h1 className="text-white">On-Demand Punctured Tyre Repairs: Anytime, Anywhere!</h1>
+          <div className="home-hero-icons">
+                <div className="text-white"><i className="fa-solid fa-circle-check"></i> &nbsp; Mobile Tyre Fitting</div>
+                <div className="text-white"><i className="fa-solid fa-circle-check"></i> &nbsp; Locknut Wheel Removal</div>
+                <div className="text-white"><i className="fa-solid fa-circle-check"></i> &nbsp; Mobile Tyre Repair</div>
+                <div className="text-white"><i className="fa-solid fa-circle-check"></i> &nbsp; Breakdown</div>
+                <div className="text-white"><i className="fa-solid fa-circle-check"></i> &nbsp; Jump Start</div>
+            </div>
+            <a href="tel: +442033939473" class="btn btn-success btn-md btn-pill mt-2">Give Us A Call</a>
+        </div>
+      </section>
 
       <section className="container">
         <Row className="mt-5 mobile-margin">

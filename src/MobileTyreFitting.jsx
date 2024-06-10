@@ -43,6 +43,7 @@ const location = useLocation();
           id="meta-description"
           content="Don’t waste time searching for a car tyre fitting shop—our professional mobile service comes to you! Get back on the road Fastly."
         />
+        <link rel="canonical" href="https://protyrefitters.co.uk/services/mobile-tyre-fitting" />
       </Helmet>
       <ServicePage
         // Images

@@ -42,6 +42,7 @@ const BurstTyre = () => {
           id="meta-description"
           content="Get immediate assistance for burst tyres. Fast, reliable service available 24/7 to get you back on the road quickly and safely. Call us now!"
         />
+        <link rel="canonical" href="https://protyrefitters.co.uk/services/burst-tyre" />
       </Helmet>
       <ServicePage
         // Images

@@ -45,6 +45,7 @@ export default function WithContactForm() {
           id="meta-description"
           content="Find answers to common queries about our tyre services in London. From fitting to repair, get all the information you need in our FAQs section."
         />
+        <link rel="canonical" href="https://protyrefitters.co.uk/faqs" />
       </Helmet>
       {/* Banner Section */}
       <header className="headerStyle">

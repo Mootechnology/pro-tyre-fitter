@@ -39,6 +39,7 @@ const LocknutWheel = () => {
           id="meta-description"
           content="Get 100% guaranteed locking wheel nut removal with our expert technicians. Rely on our fast and professional service to get your wheels off and back on the road quickly."
         />
+        <link rel="canonical" href="https://protyrefitters.co.uk/services/locknut-wheel-removal" />
       </Helmet>
       <ServicePage
         // Images

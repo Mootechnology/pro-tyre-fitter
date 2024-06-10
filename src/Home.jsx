@@ -47,6 +47,7 @@ const Home = () => {
           id="meta-description"
           content="Expert mobile tyre fitting in London. Convenient, reliable, and efficient service. Get back on the road ASAP. Call us now!"
         />
+        <link rel="canonical" href="https://protyrefitters.co.uk/" />
       </Helmet>
       {/* <CarouselPage /> */}
 
@@ -60,7 +61,7 @@ const Home = () => {
                 <div className="text-white"><i className="fa-solid fa-circle-check"></i> &nbsp; Breakdown</div>
                 <div className="text-white"><i className="fa-solid fa-circle-check"></i> &nbsp; Jump Start</div>
             </div>
-            <a href="tel: +442033939473" target="_blank" class="btn btn-success btn-md btn-pill mt-2">Give Us A Call</a>
+            <a href="tel: +442033939473" class="btn btn-success btn-md btn-pill mt-2">Give Us A Call</a>
         </div>
       </section>
 

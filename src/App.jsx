@@ -52,6 +52,7 @@ import Barnet from "./areas/Barnet";
 import Woodgreen from "./areas/Woodgreen";
 import Hoddesdon from "./areas/Hoddesdon";
 import Blog1 from "./blog1";
+import ErrorPage from "./ErrorPage";
 
 const App = () => {
   useEffect(() => {
@@ -111,7 +112,8 @@ const App = () => {
           />
           <Route path="/services/register" element={<RegisterPage />} />
 
-          <Route path="*" element={<Navigate to="/" />} />
+          {/* <Route path="*" element={<Navigate to="/" />} /> */}
+          <Route path="*" element={<ErrorPage/>} />
           <Route path="/areas/luton" element={<Luton />} />
           <Route path="/areas/st-albans" element={<StAlbans />} />
           <Route path="/areas/harlow" element={<Harlow />} />

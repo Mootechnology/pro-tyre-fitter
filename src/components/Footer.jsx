@@ -66,6 +66,7 @@ const Footer = () => {
                 <Link to="/faqs" className="footer-link">
                   FAQs
                 </Link>
+                <Link to="/sitemap.xml" className="footer-link" target="_blank" rel="noopener noreferrer">Sitemap</Link>
               </ul>
             </div>
             {/* 4 */}

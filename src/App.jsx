@@ -76,8 +76,8 @@ const App = () => {
           referrerpolicy="no-referrer"
         />
       </Helmet>
-
       <ScrollToTop smooth color="#18bd9d" />
+            
       <Router>
         <Navbar />
         <Routes>
@@ -140,8 +140,11 @@ const App = () => {
           <Route path="/areas/woodgreen" element={<Woodgreen />} />
           <Route path="/areas/hoddesdon" element={<Hoddesdon />} />
           {/* Blog */}
-          <Route path="/blogs/Tips-for-Choosing-the-Right-Mobile-Tyre-Fitting-Service" element={<Blog1 />} />
+          <Route path="/blogs/tips-tor-choosing-the-right-mobile-tyre-fitting-service" element={<Blog1 />} />
         </Routes>
+        <div className="whatsapp__icon">
+            <a href="https://wa.me/+442035041723"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
         <Footer />
       </Router>
     </>

@@ -1385,3 +1385,19 @@ footer {
     margin-top: 45px !important;
   }
 }
+
+
+.whatsapp__icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000; /* Optional: ensures it stays on top of other elements */
+  border-radius: 50%; /* Optional: makes the background circular */
+  color: white; /* Ensures the icon color is white */
+  cursor: pointer;
+}
+
+.whatsapp__icon i{
+  font-size: 52px; /* Adjusts the icon size */
+  color: #25D366;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const AreasPage = ({ pageTitle, ...otherProps }) => {
     const {
@@ -20,6 +21,15 @@ const AreasPage = ({ pageTitle, ...otherProps }) => {
       } = otherProps;
     return (
     <>
+    <Helmet>
+        <title id='meta-title'>Areas Page</title>
+        <meta
+          name="description"
+          id='meta-description'
+          content="Descripion of Areas Page"
+        />
+        <meta name="robots" content="noindex, unfollow" />
+      </Helmet>
      {/* Banner Section */}
      <header className={mergedHeaderStyle}>
         <h1>{pageTitle}</h1>

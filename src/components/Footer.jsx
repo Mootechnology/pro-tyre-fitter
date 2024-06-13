@@ -85,7 +85,6 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-
             {/* END */}
           </section>
         </div>

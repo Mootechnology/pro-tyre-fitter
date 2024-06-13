@@ -41,6 +41,7 @@ const TyreReplacement = () => {
           id='meta-description'
           content="Don’t wait! Our expert mobile tyre replacement service in London ensures quick, reliable, and hassle-free solutions. Get back on the road confidently."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/services/tyre-replacement" />
       </Helmet>
 

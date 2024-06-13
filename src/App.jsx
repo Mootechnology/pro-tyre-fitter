@@ -143,7 +143,7 @@ const App = () => {
           <Route path="/blogs/tips-tor-choosing-the-right-mobile-tyre-fitting-service" element={<Blog1 />} />
         </Routes>
         <div className="whatsapp__icon">
-            <a href="https://wa.me/+442035041723"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.me/+447441427933"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
         <Footer />
       </Router>

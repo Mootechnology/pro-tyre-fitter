@@ -50,9 +50,9 @@ const Home = () => {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/" />
       </Helmet>
-      {/* <CarouselPage /> */}
+      <CarouselPage />
 
-      <section className="ptf-hero">
+      {/* <section className="ptf-hero">
         <div className="container">
           <h1 className="text-white">On-Demand Punctured Tyre Repairs: Anytime, Anywhere!</h1>
           <div className="home-hero-icons">
@@ -64,7 +64,7 @@ const Home = () => {
             </div>
             <a href="tel: +442033939473" class="btn btn-success btn-md btn-pill mt-2">Give Us A Call</a>
         </div>
-      </section>
+      </section> */}
 
       <section className="container">
         <Row className="mt-5 mobile-margin">

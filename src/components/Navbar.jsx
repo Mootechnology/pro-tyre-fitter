@@ -190,63 +190,32 @@ function Navbar() {
                     Areas
                   </button>
                   <div className="dropdown-menu m-0">
-                    <Link
-                      to="/areas/luton"
-                      className="dropdown-item"
-                      onClick={handleNavCollapse}
-                    >
-                      Hertfordshire - Luton
-                    </Link>
-                    {/* <Link
-                      to="/services/mobile-tyre-repair"
-                      className="dropdown-item"
-                      onClick={handleNavCollapse}
-                    >
-                      Area 2
-                    </Link>
-                    <Link
-                      to="/services/tyre-replacement"
-                      className="dropdown-item"
-                      onClick={handleNavCollapse}
-                    >
-                      Area 3
-                    </Link>
-                    <Link
-                      to="/services/flat-tyre"
-                      className="dropdown-item"
-                      onClick={handleNavCollapse}
-                    >
-                      Area 4
-                    </Link>
-                    <Link
-                      to="/services/burst-tyre"
-                      className="dropdown-item"
-                      onClick={handleNavCollapse}
-                    >
-                      Area 5
-                    </Link>
-                    <Link
-                      to="/services/part-worn-tyre"
-                      className="dropdown-item"
-                      onClick={handleNavCollapse}
-                    >
-                      Area 6
-                    </Link>
-                    <Link
-                      to="/services/jumpstart"
-                      className="dropdown-item"
-                      onClick={handleNavCollapse}
-                    >
-                      Area 7
-                    </Link>
-                    <Link
-                      to="/services/locknut-wheel-removal"
-                      className="dropdown-item"
-                      onClick={handleNavCollapse}
-                    >
-                      Area 8
-                    </Link> */}
+                    <Link to="/areas/st-albans" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - St-Albans</Link>
+                    <Link to="/areas/luton" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Luton</Link>
+                    <Link to="/areas/harlow" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Harlow</Link>
+                    <Link to="/areas/hatfield" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Hatfield</Link>
+                    <Link to="/areas/potters-bar" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Potters Bar</Link>
+                    <Link to="/areas/hemelhempstead" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Hemel Hempstead</Link>
+                    <Link to="/areas/cheshunt" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Cheshunt</Link>
+                    <Link to="/areas/codicote" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Codicote</Link>
+                    <Link to="/areas/londoncolney" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - London Colney</Link>
+                    <Link to="/areas/kingslangley" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Kings Langley</Link>
+                    <Link to="/areas/wheathampstead" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Wheathampstead</Link>
+                    <Link to="/areas/abbotslangley" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Abbots Langley</Link>
+                    <Link to="/areas/broxbourne" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Broxbourne</Link>
+                    <Link to="/areas/borehamwood" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Borehamwood</Link>
+                    <Link to="/areas/southmimms" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - South Mimms</Link>
+                    <Link to="/areas/cuffley" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Cuffley</Link>
+                    <Link to="/areas/ware" className="dropdown-item" onClick={handleNavCollapse}>Hertfordshire - Ware</Link>
 
+                    <Link to="/areas/ilford" className="dropdown-item" onClick={handleNavCollapse}>London - Ilford</Link>
+                    <Link to="/areas/edmonton" className="dropdown-item" onClick={handleNavCollapse}>London - Edmonton</Link>
+                    <Link to="/areas/wangsted" className="dropdown-item" onClick={handleNavCollapse}>London - Wangsted</Link>
+                    <Link to="/areas/chingford" className="dropdown-item" onClick={handleNavCollapse}>London - Chingford</Link>
+                    <Link to="/areas/woodford-green" className="dropdown-item" onClick={handleNavCollapse}>London - Woodford Green</Link>
+                    <Link to="/areas/barnet" className="dropdown-item" onClick={handleNavCollapse}>London - Barnet</Link>
+                    <Link to="/areas/woodgreen" className="dropdown-item" onClick={handleNavCollapse}>London - Woodgreen</Link>
+                    <Link to="/areas/hoddesdon" className="dropdown-item" onClick={handleNavCollapse}>London - Hoddesdon</Link>
                   </div>
                 </div>
                 {/* Areas */}

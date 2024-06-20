@@ -47,6 +47,7 @@ const Home = () => {
           id="meta-description"
           content="Expert mobile tyre fitting in London. Convenient, reliable, and efficient service. Get back on the road ASAP. Call us now!"
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/" />
       </Helmet>
       {/* <CarouselPage /> */}

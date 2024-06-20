@@ -72,6 +72,7 @@ function ContactPage() {
           id="meta-description"
           content="Get in touch with us for professional tyre services in London. Whether it's fitting, repair, replacement, or more, we've got you covered. Reach out today!"
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/contact" />
       </Helmet>
       {/* Banner Section */}

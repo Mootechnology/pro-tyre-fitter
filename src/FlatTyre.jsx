@@ -40,6 +40,7 @@ const FlatTyre = () => {
           id="meta-description"
           content="Expert flat tyre repair in London. Trust our experienced technicians to fix your car troubles in no time. Contact us today!"
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/services/flat-tyre" />
       </Helmet>
       <ServicePage

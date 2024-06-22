@@ -36,7 +36,7 @@ const Banner = () => {
                     <span className="d-block text-white">
                       For Email Enquiry
                     </span>
-                    <h5 className="tc-text-color">info@protyrefitters.com</h5>
+                    <h5><a href="mailto:info@protyrefitters.com" className="tc-text-color" style={{textDecoration:'none'}}>info@protyrefitters.com</a></h5>
                     <span className="d-block text-white">
                       We are present 24/7
                     </span>
@@ -52,7 +52,7 @@ const Banner = () => {
                     <span className="d-block text-white">
                       For Booking Rides
                     </span>
-                    <h5 className="tc-text-color">+44 2035041723</h5>
+                    <h5><a href="tel: +442033939473" className="tc-text-color" style={{textDecoration:'none'}}>+44 2035041723</a></h5>
                     <span className="d-block text-white">
                       We are present 24/7
                     </span>

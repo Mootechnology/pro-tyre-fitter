@@ -21,28 +21,28 @@ const HowSection = () => {
           <div className="process-box" style={{ border: '2px solid #30a18b', borderRadius: '10px', padding: '20px' }}>
             <span className="process-icon" style={{ fontSize: '36px', color: '#30a18b' }}><i className="fa-solid fa-headphones"></i></span>
             <h3 className="font-theme process-title mt-3 mb-2">Call Us</h3>
-            <p className="font-theme process-subtitle mb-0">Call us to schedule an appointment</p>
+            <p className="font-theme process-subtitle mb-0 text-center">Call us to schedule an appointment</p>
           </div>
         </div>
         <div className="col-md-5 mb-4">
           <div className="process-box" style={{ border: '2px solid #30a18b', borderRadius: '10px', padding: '20px' }}>
             <span className="process-icon" style={{ fontSize: '36px', color: '#30a18b' }}><i className="fa-solid fa-user"></i></span>
             <h3 className="font-theme process-title mt-3 mb-2">Get The Expert</h3>
-            <p className="font-theme process-subtitle mb-0">Speak with our expert technicians</p>
+            <p className="font-theme process-subtitle mb-0 text-center">Speak with our expert technicians</p>
           </div>
         </div>
         <div className="col-md-5 mb-4">
           <div className="process-box" style={{ border: '2px solid #30a18b', borderRadius: '10px', padding: '20px' }}>
             <span className="process-icon" style={{ fontSize: '36px', color: '#30a18b' }}><i className="fa-solid fa-arrow-rotate-left"></i></span>
             <h3 className="font-theme process-title mt-3 mb-2">Get Tyre Fixed</h3>
-            <p className="font-theme process-subtitle mb-0">We'll fix your tyre promptly in no time</p>
+            <p className="font-theme process-subtitle mb-0 text-center">We'll fix your tyre promptly in no time</p>
           </div>
         </div>
         <div className="col-md-5 mb-4">
           <div className="process-box" style={{ border: '2px solid #30a18b', borderRadius: '10px', padding: '20px' }}>
             <span className="process-icon" style={{ fontSize: '36px', color: '#30a18b' }}><i className="fa-solid fa-hand-holding-dollar"></i></span>
             <h3 className="font-theme process-title mt-3 mb-2">Payment</h3>
-            <p className="font-theme process-subtitle mb-0">Make your payment securely and Safely</p>
+            <p className="font-theme process-subtitle mb-0 text-center">Make your payment securely and Safely</p>
           </div>
         </div>
       </div>

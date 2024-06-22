@@ -52,7 +52,7 @@ const Home = () => {
       </Helmet>
       {/* <CarouselPage /> */}
 
-      <section className="ptf-hero">
+      <section className="ptf-hero fix-img">
         <div className="container">
           <h1 className="text-white">On-Demand Punctured Tyre Repairs: Anytime, Anywhere!</h1>
           <div className="home-hero-icons">

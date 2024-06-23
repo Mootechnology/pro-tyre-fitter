@@ -77,6 +77,7 @@ const location = useLocation();
         scardTwo="Offer you the service anywhere, anytime"
         scardThree="Highly affordable"
         ctaText={ctaText}
+        bannerSubHeading="24/7 mobile tyre fitting service available. Get instant expert help in 30-40 minutes"
       />
     </>
   );

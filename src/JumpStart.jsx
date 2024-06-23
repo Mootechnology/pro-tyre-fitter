@@ -80,6 +80,7 @@ const JumpStart = () => {
         scardTwo="Prioritise your safety         "
         scardThree="Serve you at your designated location"
         ctaText={ctaText}
+        bannerSubHeading="Restart your depleted battery with Jumpstart service. Cover our professional emergency in 30 to 40 minutes"
       />
     </>
   );

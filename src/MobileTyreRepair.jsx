@@ -78,6 +78,7 @@ const MobileTyreRepair = () => {
         scardTwo="Well-trained professionals "
         scardThree="Serve at your location"
         ctaText="Contact our customer care officer for mobile tyre repair service; they will guide you immediately and send the best professionals to your location with a complete toolkit to solve your tyre-related problem. We provide you with the best affordable service that reduces your financial burden."
+        bannerSubHeading="Restore tyre's health with Mobile Tyre Repair. Our experts are available 24/7 to serve you"
       />
     </>
   );

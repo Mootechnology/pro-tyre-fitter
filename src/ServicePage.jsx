@@ -28,6 +28,7 @@ const ServicePage = ({ pageTitle, ...otherProps }) => {
     scardTwo,
     scardThree,
     ctaText,
+    bannerSubHeading
   } = otherProps;
 
   return (
@@ -35,6 +36,9 @@ const ServicePage = ({ pageTitle, ...otherProps }) => {
       {/* Banner Section */}
       <header className={mergedHeaderStyle}>
         <h1>{pageTitle}</h1>
+        <div className="text-center">
+          <h4><p className="text-white h5" style={{textShadow: "1px -2px 10px rgba(0,0,0,0.6)"}}>{bannerSubHeading}</p></h4>
+        </div>
         <h5>
           <Link to="/" className="linkStyle">
             <i class="fa-solid fa-house"></i> Home{" "}

@@ -73,6 +73,7 @@ const MobileBreakdown = () => {
         scardTwo="Serve at your directed location"
         scardThree="Highly affordable"
         ctaText="Call us today to get breakdown recovery service at your location. Our highly skilled professionals reach your location quickly and solve the problem in no time. They serve you regardless of time and place, no matter wherever you are, and when you need help, they are always ready to serve you."
+        bannerSubHeading="Save your vehicle battery with breakdown recovery service. Our professionals serve you at your location irrespective of your home, office or road"
       />
     </>
   );

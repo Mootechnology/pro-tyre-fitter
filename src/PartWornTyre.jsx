@@ -71,6 +71,7 @@ const PartWornTyre = () => {
         scardTwo="Finest part worn tyres"
         scardThree="24/7 available anywhere, anytime"
         ctaText={ctaText}
+        bannerSubHeading="Replace your damaged tyre with a part worn tyre. Best service at your desired location without time and place restrictions"
      /> 
     </>
   )

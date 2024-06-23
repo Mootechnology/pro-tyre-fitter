@@ -71,6 +71,7 @@ const TyreReplacement = () => {
         scardTwo="Serve by best professionals"
         scardThree="Serve at your desired location"
         ctaText="Call us to get your car tyres replaced with new ones using our exceptional tyre replacement service. We service you at your directed location, recommend the best tyres for your journey and serve you beyond the limit of time and place."
+        bannerSubHeading="Replace your damage tyre with a tyre replacement service. Experienced experts reach your location within 30 to 40 minutes"
      /> 
     </>
   )

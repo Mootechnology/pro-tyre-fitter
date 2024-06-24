@@ -42,6 +42,7 @@ function About() {
           id="meta-description"
           content="Discover our comprehensive tyre services in London, including fitting, repair, replacement, and more. Trust our expertise for all your tyre needs."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/about" />
       </Helmet>
       {/* Banner Section */}

@@ -43,6 +43,7 @@ const location = useLocation();
           id="meta-description"
           content="Don’t waste time searching for a car tyre fitting shop—our professional mobile service comes to you! Get back on the road Fastly."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/services/mobile-tyre-fitting" />
       </Helmet>
       <ServicePage
@@ -61,7 +62,7 @@ const location = useLocation();
         headingFour="Mobile tyre service at your location"
         headingFive="Ensure your travel with Mobile Tyre Fitting London"
         paraOne={paraOne}
-        paraTwo="If you are suffering from a flat tyre problem, all you need is a mobile tyre fitting service near me, which effectively covers the problem and helps you resume your journey towards your destination. We trained our professionals so that they know all of the issues related to tyres and their possible solutions. They arrive at your directed location with a complete toolkit that helps to fix the problem permanently. No matter where you are, they reach your location to solve your problem.        "
+        paraTwo="If you are suffering from a tyre problem, all you need is a mobile tyre fitting service near me, which effectively covers the problem and helps you resume your journey towards your destination. We trained our professionals so that they know all of the issues related to tyres and their possible solutions. They arrive at your directed location with a complete toolkit that helps to fix the problem permanently. No matter where you are, they reach your location to solve your problem.        "
         paraThree="We understand that an unbalanced wheel becomes a problem for you; it can cause an accident. An unbalanced wheel situation creates panic and is challenging to manage. 24-Hour Mobile Tyre Fittings London fixes your tyre problem fast. Your safety is our priority and concern. Our experts ensure your safety and then solve your tyre problem. A weak tyre becomes a problem anytime, anywhere; our professionals are always ready to help you at your home, workplace or side of the road wherever you are stuck. 
         "
         paraFour={paraFour}
@@ -76,6 +77,7 @@ const location = useLocation();
         scardTwo="Offer you the service anywhere, anytime"
         scardThree="Highly affordable"
         ctaText={ctaText}
+        bannerSubHeading="24/7 mobile tyre fitting service available. Get instant expert help in 30-40 minutes"
       />
     </>
   );

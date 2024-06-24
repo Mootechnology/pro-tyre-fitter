@@ -74,6 +74,7 @@ const BurstTyre = () => {
           id="meta-description"
           content="Get immediate assistance for burst tyres. Fast, reliable service available 24/7 to get you back on the road quickly and safely. Call us now!"
         />
+        <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
           href="https://protyrefitters.co.uk/services/burst-tyre"
@@ -114,6 +115,7 @@ const BurstTyre = () => {
         scardTwo="24/7 available "
         scardThree="Serve you Anywhere, anytime"
         ctaText="Call us today to recover your vehicle from a burst tyre service incident; our professional will serve you beyond your expectations, arrive at your location with the best toolkit, diagnose the cause of the problem, and resolve it with the best possible solution. They ensure that you and your vehicle are safer throughout the journey."
+        bannerSubHeading="Exceptional burst tyre service for emergencies. Amazing professionals are available to serve you"
       />
     </>
   );

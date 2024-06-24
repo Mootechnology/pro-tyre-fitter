@@ -40,6 +40,7 @@ const PartWornTyre = () => {
           name="description"
           content="Find top-quality part worn tyres at affordable prices. Reliable, inspected tyres for safe driving. Check our range and save on your next tyre purchase today!"
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/services/part-worn-tyre" />
       </Helmet>
 
@@ -70,6 +71,7 @@ const PartWornTyre = () => {
         scardTwo="Finest part worn tyres"
         scardThree="24/7 available anywhere, anytime"
         ctaText={ctaText}
+        bannerSubHeading="Replace your damaged tyre with a part worn tyre. Best service at your desired location without time and place restrictions"
      /> 
     </>
   )

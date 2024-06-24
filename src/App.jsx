@@ -149,7 +149,7 @@ const App = () => {
           </Routes>
         </CanonicalProvider>
         <div className="whatsapp__icon">
-          <a href="https://wa.me/+442035041723">
+          <a href="https://wa.me/+447441427933">
             <i class="fa-brands fa-whatsapp"></i>
           </a>
         </div>

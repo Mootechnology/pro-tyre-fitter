@@ -39,6 +39,7 @@ const JumpStart = () => {
           name="description"
           content="Need a jump start? Our 24/7 car service provides fast and reliable jump starts to get you back on the road quickly. Call us anytime for immediate help!"
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/services/jumpstart" />
       </Helmet>
       <ServicePage
@@ -79,6 +80,7 @@ const JumpStart = () => {
         scardTwo="Prioritise your safety         "
         scardThree="Serve you at your designated location"
         ctaText={ctaText}
+        bannerSubHeading="Restart your depleted battery with Jumpstart service. Cover our professional emergency in 30 to 40 minutes"
       />
     </>
   );

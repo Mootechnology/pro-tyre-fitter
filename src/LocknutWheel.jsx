@@ -51,7 +51,7 @@ const LocknutWheel = () => {
         imgFour="/images/lwr2(3).png"
         imgFive="/images/lwr3.png"
         // Text
-        pageTitle="Locking Wheelnut Removal"
+        pageTitle="Protect your wheels with a locking wheel nut removal service"
         headingOne="Secure your tyre Locking wheel nut removal"
         headingTwo="Experience our trained locking wheel nut remover"
         headingThree="Excellent locking wheel nut removal tool"
@@ -79,7 +79,7 @@ const LocknutWheel = () => {
         scardThree="Highly trained professionals"
         ctaText="Contact our expert for locking wheel nut removal service, whether at your home, office, or side of the road. They are highly trained, perform all procedures carefully, and meet your expectations. Call us today to secure your tyres and reduce the stress of tyre theft.
         "
-        bannerSubHeading="Protect your wheels with a locking wheel nut removal service. Our experienced experts serve you seamlessly"
+        bannerSubHeading="Our experienced experts serve you seamlessly"
       />
     </>
   );

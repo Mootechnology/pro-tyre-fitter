@@ -53,7 +53,7 @@ const TyreReplacement = () => {
         imgFour="/images/tr2(3).png"
         imgFive="/images/tr3.png"
         // Text
-        pageTitle="Tyre Replacement"
+        pageTitle="Replace your damage tyre with a tyre replacement service"
         headingOne="24/7 Mobile Tyre Replacement service"
         headingTwo="Quick-fix with tyre replacement near me"
         headingThree="Rescue your vehicle by tyre replacement in London"
@@ -71,7 +71,7 @@ const TyreReplacement = () => {
         scardTwo="Serve by best professionals"
         scardThree="Serve at your desired location"
         ctaText="Call us to get your car tyres replaced with new ones using our exceptional tyre replacement service. We service you at your directed location, recommend the best tyres for your journey and serve you beyond the limit of time and place."
-        bannerSubHeading="Replace your damage tyre with a tyre replacement service. Experienced experts reach your location within 30 to 40 minutes"
+        bannerSubHeading="Experienced experts reach your location within 30 to 40 minutes"
      /> 
     </>
   )

@@ -56,7 +56,7 @@ function BlogPage() {
         <link rel="canonical" href="https://protyrefitters.co.uk/blogs" />
       </Helmet>
       {/* Banner Section */}
-      <header className='headerStyle'>
+      <header className='headerStyle blog_banner'>
         <h1>Blogs</h1>
         <h5><Link to="/" className="linkStyle"><i class="fa-solid fa-house"></i> Home </Link> | Blogs</h5>
       </header>
@@ -75,7 +75,7 @@ function BlogPage() {
      <Container className='mb-3'>
       <Row className="justify-content-center">
         <Col md={6} className="image-container mt-3">
-          <img src="images/img-11.jpg" alt="Image 1" className="img-fluid" />
+          <img src="images/img-11.png" alt="Image 1" className="img-fluid rounded" />
           <div className="text-container">
             <h2>Tips for Choosing the Right Mobile Tyre Fitting Service</h2>
             <p style={{width: '90%', textAlign: 'justify'}}>Are you fed up with your tyre problems and looking for a solution to ease your worries? Tyre-related problems disrupt travel routines and affect work, causing unexpected stress and incidents. It can occur for many reasons, like lack of maintenance, extreme weather, and bad road conditions, but finding the solution is another task for a person. Pro Tyre Fitters is a platform that deals with all tyre-related problems and provides the best quick solutions. Our professionals are ready  24/7 to deal with the emergency. Here are some tips to help you choose the right mobile tyre fitting service for your vehicle.</p>

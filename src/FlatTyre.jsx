@@ -52,7 +52,7 @@ const FlatTyre = () => {
         imgFour="/images/flattyre/Rescue your tyre with a Flat tyre service.png"
         imgFive="/images/flattyre/Rescue your travel with Flat tyre repair near me.png"
         // Text
-        pageTitle="Flat Tyre"
+        pageTitle="Save your tyres in an emergency with flat tyre service"
         headingOne="Rescue your tyre with a Flat tyre service "
         headingTwo="24/7 Flat tyre call out service"
         headingThree="Immediately recover your tyre with Flat tyre repair "
@@ -77,7 +77,7 @@ const FlatTyre = () => {
         scardTwo="Manage the emergencies "
         scardThree="Rescue your tyre with a Flat tyre service"
         ctaText="Call us today to solve your flat tyre problem; we offer you the best service at the most affordable price. Our professionals arrive at your desired location with a complete toolkit to serve you beyond the limits of time and space"
-        bannerSubHeading="Save your tyres in an emergency with flat tyre service. Our experts are experienced in flat tyre recovery service."
+        bannerSubHeading="Our experts are experienced in flat tyre recovery service."
       />
     </>
   );

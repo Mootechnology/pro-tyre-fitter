@@ -55,7 +55,7 @@ const location = useLocation();
         imgFour="/images/mtf2 (3).png"
         imgFive="/images/mtf3.png"
         // Text
-        pageTitle="Mobile Tyre Fitting"
+        pageTitle="24/7 mobile tyre fitting service available"
         headingOne="Exceptional Mobile Tyre Fitting service "
         headingTwo="You need a mobile tyre fitting service near me "
         headingThree="24-Hour Mobile Tyre Fittings London covers emergencies"
@@ -77,7 +77,7 @@ const location = useLocation();
         scardTwo="Offer you the service anywhere, anytime"
         scardThree="Highly affordable"
         ctaText={ctaText}
-        bannerSubHeading="24/7 mobile tyre fitting service available. Get instant expert help in 30-40 minutes"
+        bannerSubHeading="Get instant expert help in 30-40 minutes"
       />
     </>
   );

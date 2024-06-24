@@ -52,6 +52,7 @@ const LocknutWheel = () => {
         imgFive="/images/lwr3.png"
         // Text
         pageTitle="Protect your wheels with a locking wheel nut removal service"
+        pageName="Locknut Wheel Removal"
         headingOne="Secure your tyre Locking wheel nut removal"
         headingTwo="Experience our trained locking wheel nut remover"
         headingThree="Excellent locking wheel nut removal tool"

@@ -56,6 +56,7 @@ const location = useLocation();
         imgFive="/images/mtf3.png"
         // Text
         pageTitle="24/7 mobile tyre fitting service available"
+        pageName="Mobile Tyre Fitting"
         headingOne="Exceptional Mobile Tyre Fitting service "
         headingTwo="You need a mobile tyre fitting service near me "
         headingThree="24-Hour Mobile Tyre Fittings London covers emergencies"

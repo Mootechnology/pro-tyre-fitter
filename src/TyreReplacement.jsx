@@ -54,6 +54,7 @@ const TyreReplacement = () => {
         imgFive="/images/tr3.png"
         // Text
         pageTitle="Replace your damage tyre with a tyre replacement service"
+        pageName="Tyre Replacement"
         headingOne="24/7 Mobile Tyre Replacement service"
         headingTwo="Quick-fix with tyre replacement near me"
         headingThree="Rescue your vehicle by tyre replacement in London"

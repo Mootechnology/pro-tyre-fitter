@@ -56,6 +56,7 @@ const MobileBreakdown = () => {
         imgFive="/images/mb3.png"
         // Text
         pageTitle="Save your vehicle battery with breakdown recovery service"
+        pageName="Mobile Breakdown"
         headingOne="Breakdown recovery service anywhere, anytime"
         headingTwo="Immediate breakdown recovery near me"
         headingThree="Resume your journey with a recovery breakdown."

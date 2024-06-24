@@ -53,6 +53,7 @@ const FlatTyre = () => {
         imgFive="/images/flattyre/Rescue your travel with Flat tyre repair near me.png"
         // Text
         pageTitle="Save your tyres in an emergency with flat tyre service"
+        pageName="Flat Tyre"
         headingOne="Rescue your tyre with a Flat tyre service "
         headingTwo="24/7 Flat tyre call out service"
         headingThree="Immediately recover your tyre with Flat tyre repair "

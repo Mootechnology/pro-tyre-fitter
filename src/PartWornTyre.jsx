@@ -54,6 +54,7 @@ const PartWornTyre = () => {
         imgFive="/images/pwt3.png"
         // Text
         pageTitle="Replace your damaged tyre with a part worn tyre"
+        pageName="Part Worn Tyre"
         headingOne="Experience our part-worn tyres service"
         headingThree="Manage emergencies with part worn tyres near me"
         headingTwo="Inexpensive used tyres near me"

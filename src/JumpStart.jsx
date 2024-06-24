@@ -52,6 +52,7 @@ const JumpStart = () => {
         imgFive="/images/jumpstart/Jumpstart service at your desired location.png"
         // Text
         pageTitle="Restart your depleted battery with Jumpstart service"
+        pageName="Jump Start"
         headingOne="Rescue your vehicle's battery with jumpstart service"
         headingTwo="Expeditious jumpstart car service "
         headingThree="Quick fix with jumpstart service near me "

@@ -53,6 +53,7 @@ const MobileTyreRepair = () => {
         imgFive="/images/mtr3.png"
         // Text
         pageTitle="Restore tyre's health with Mobile Tyre Repair"
+        pageName="Mobile Tyre Repair"
         headingOne="Quick fix the tyre with Mobile Tyre Repair "
         headingTwo="Rescue your vehicle with tyre repair near me"
         headingThree="Ensure your journey with mobile car tyre repair"

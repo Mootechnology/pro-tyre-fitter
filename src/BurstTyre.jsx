@@ -55,6 +55,7 @@ const BurstTyre = () => {
         imgFive="/images/bursttyre/Ensure your travel with  burst tyre service.png"
         // Text
         pageTitle="Exceptional burst tyre service for emergencies"
+        pageName="Burst Tyre"
         headingOne="24/7 Emergency burst tyre service "
         headingTwo="Immediately resolve your tyre burst issue"
         headingThree="Highly trained Professionals deal with tyre blowouts "

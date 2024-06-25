@@ -12,8 +12,15 @@ import imgThree from "./assets/images/home/Nimble mobile tyre service near me.pn
 import imgFour from "./assets/images/home/Our mission.png";
 import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { useCanonical } from "./canonical";
 
 const Home = () => {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/");
+  }, [setCanonicalUrl]);
+
   const location = useLocation();
   useEffect(() => {
     // Update meta title and description when route changes

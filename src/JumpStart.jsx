@@ -2,8 +2,15 @@ import React, { useEffect } from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
+import { useCanonical } from "./canonical";
 
 const JumpStart = () => {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/services/jumpstart");
+  }, [setCanonicalUrl]);
+
   const paraOne = (<>A weak and depleted battery can stall your vehicle anywhere without alarm, and sudden stops during the journey can cause unexpected stress. We know that a depleted battery slows down your vehicle's performance and leads to late arrival at your destination. <Link to='/'>Pro Tyre Fitters</Link> is a platform that takes care of its customers' needs and offers you a jumpstart service to solve your car battery problem. We provide you with the best professionals who provide you with the services to overcome this situation and resume your journey.</>)
   const ctaText = (<><Link to='/contact'>Call us today</Link> to get jumpstart service and save your battery from further damage. Our professionals guide you completely and provide you with a jumpstart car battery charger that will help you in the future. They reach your location and solve your problem immediately.</>)
 

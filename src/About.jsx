@@ -6,8 +6,15 @@ import About2 from "./assets/images/about2.png";
 import About3 from "./assets/images/about3.png";
 import BG from "./assets/images/banners/bg.png";
 import { Helmet } from "react-helmet";
+import { useCanonical } from "./canonical";
 
 function About() {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/about");
+  }, [setCanonicalUrl]);
+
   const location = useLocation();
 
   useEffect(() => {

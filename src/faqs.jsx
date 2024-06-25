@@ -8,8 +8,15 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import Accordion from 'react-bootstrap/Accordion';
+import { useCanonical } from "./canonical";
 
 export default function WithContactForm() {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/faq");
+  }, [setCanonicalUrl]);
+
   const location = useLocation();
 
   useEffect(() => {

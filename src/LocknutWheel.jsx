@@ -2,8 +2,15 @@ import React, { useEffect } from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
+import { useCanonical } from "./canonical";
 
 const LocknutWheel = () => {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/services/locknut-wheel-removal");
+  }, [setCanonicalUrl]);
+
   const paraOne = (<>A loose tyre nut can become a nuisance, cause an unpleasant accident, and lead to theft. It's important to ensure your tyre is fully secured and prepared for travel. <Link to='/'>Pro Tyre Fitters</Link> is a platform that cares for its customers' needs and ensures tyre safety by providing locking wheel nut removal services to solve minor to major tyre-related problems. They are always available to provide smooth service and protect your vehicle from unexpected damages.</>) 
 
   const location = useLocation();

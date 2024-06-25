@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; 
 import { Helmet } from "react-helmet";
+import { useCanonical } from "./canonical";
 
 const blogPosts = [
   {
@@ -37,6 +38,12 @@ const blogPosts = [
 ];
 
 function BlogPage() {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/blogs");
+  }, [setCanonicalUrl]);
+
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {

@@ -2,8 +2,15 @@ import React, { useEffect } from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
+import { useCanonical } from "./canonical";
 
 const FlatTyre = () => {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/faq");
+  }, [setCanonicalUrl]);
+  
   const paraThree = (<>A flat tyre problem can appear anywhere without an alarm and always brings mental, physical and financial stress. To save you the physical effort of taking the car to the garage, we bring garages with the best toolkits and professionals to serve you at your comfortable location. We have trained our professionals to provide you with flat <Link to='../services/mobile-tyre-repair'>tyre repair services</Link>. They know all tyre-related problems and provide the best solutions to solve them permanently.</>)
 
   const location = useLocation();

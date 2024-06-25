@@ -5,8 +5,15 @@ import ContactUsBar from "./components/ContactUsBar";
 import BG from "./assets/images/contact-bg.png";
 import Contact1 from "./assets/images/contact1.png";
 import { Helmet } from "react-helmet";
+import { useCanonical } from "./canonical";
 
 function ContactPage() {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/contact");
+  }, [setCanonicalUrl]);
+
   const [data, setData] = useState({});
 
   const location = useLocation();

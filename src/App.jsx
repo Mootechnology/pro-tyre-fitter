@@ -4,7 +4,8 @@ import "./assets/css/style.css";
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  Navigate,
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./Home";
@@ -23,7 +24,7 @@ import PartWornTyre from "./PartWornTyre";
 import JumpStart from "./JumpStart";
 import LocknutWheel from "./LocknutWheel";
 import MobileBreakdown from "./MobileBreakdown";
-import RegisterPage from "./register";
+// import RegisterPage from "./register";
 import ScrollToTop from "react-scroll-to-top";
 import Luton from "./areas/Luton";
 import StAlbans from "./areas/StAlbans";
@@ -80,68 +81,70 @@ const App = () => {
 
       <Router>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/faqs" element={<FAQS />} />
-          <Route path="/blogs" element={<BlogPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route
-            path="/services/mobile-tyre-fitting"
-            element={<MobileTyreFitting />}
-          />
-          <Route
-            path="/services/mobile-tyre-repair"
-            element={<MobileTyreRepair />}
-          />
-          <Route
-            path="/services/tyre-replacement"
-            element={<TyreReplacement />}
-          />
-          <Route path="/services/flat-tyre" element={<FlatTyre />} />
-          <Route path="/services/burst-tyre" element={<BurstTyre />} />
-          <Route path="/services/part-worn-tyre" element={<PartWornTyre />} />
-          <Route path="/services/jumpstart" element={<JumpStart />} />
-          <Route
-            path="/services/locknut-wheel-removal"
-            element={<LocknutWheel />}
-          />
-          <Route
-            path="/services/mobile-breakdown"
-            element={<MobileBreakdown />}
-          />
-          <Route path="/services/register" element={<RegisterPage />} />
-
-          {/* <Route path="*" element={<Navigate to="/" />} /> */}
-          <Route path="*" element={<ErrorPage/>} />
-          <Route path="/areas/luton" element={<Luton />} />
-          <Route path="/areas/st-albans" element={<StAlbans />} />
-          <Route path="/areas/harlow" element={<Harlow />} />
-          <Route path="/areas/hemelhempstead" element={<HemelHempStead />} />
-          <Route path="/areas/cheshunt" element={<Cheshunt />} />
-          <Route path="/areas/codicote" element={<Codicote />} />
-          <Route path="/areas/londoncolney" element={<LondonColney />} />
-          <Route path="/areas/kingslangley" element={<KingsLangley />} />
-          <Route path="/areas/wheathampstead" element={<WheatHampstead />} />
-          <Route path="/areas/abbotslangley" element={<AbbotsLangley />} />
-          <Route path="/areas/broxbourne" element={<Broxbourne />} />
-          <Route path="/areas/borehamwood" element={<Borehamwood />} />
-          <Route path="/areas/southmimms" element={<SouthMimms />} />
-          <Route path="/areas/cuffley" element={<Cuffley />} />
-          <Route path="/areas/ware" element={<Ware />} />
-          <Route path="/areas/hatfield" element={<Hatfield />} />
-          <Route path="/areas/potters-bar" element={<PottersBar />} />
-          <Route path="/areas/ilford" element={<Ilford />} />
-          <Route path="/areas/edmonton" element={<Edmonton />} />
-          <Route path="/areas/wangsted" element={<Wangsted />} />
-          <Route path="/areas/chingford" element={<Chingford />} />
-          <Route path="/areas/woodford-green" element={<WoodfordGreen />} />
-          <Route path="/areas/barnet" element={<Barnet />} />
-          <Route path="/areas/woodgreen" element={<Woodgreen />} />
-          <Route path="/areas/hoddesdon" element={<Hoddesdon />} />
-          {/* Blog */}
-          <Route path="/blogs/tips-tor-choosing-the-right-mobile-tyre-fitting-service" element={<Blog1 />} />
-        </Routes>
+        <CanonicalProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/faqs" element={<FAQS />} />
+            <Route path="/blogs" element={<BlogPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route
+              path="/services/mobile-tyre-fitting"
+              element={<MobileTyreFitting />}
+            />
+            <Route
+              path="/services/mobile-tyre-repair"
+              element={<MobileTyreRepair />}
+            />
+            <Route
+              path="/services/tyre-replacement"
+              element={<TyreReplacement />}
+            />
+            <Route path="/services/flat-tyre" element={<FlatTyre />} />
+            <Route path="/services/burst-tyre" element={<BurstTyre />} />
+            <Route path="/services/part-worn-tyre" element={<PartWornTyre />} />
+            <Route path="/services/jumpstart" element={<JumpStart />} />
+            <Route
+              path="/services/locknut-wheel-removal"
+              element={<LocknutWheel />}
+            />
+            <Route
+              path="/services/mobile-breakdown"
+              element={<MobileBreakdown />}
+            />
+            <Route path="*" element={<ErrorPage />} />
+            <Route path="/areas/luton" element={<Luton />} />
+            <Route path="/areas/st-albans" element={<StAlbans />} />
+            <Route path="/areas/harlow" element={<Harlow />} />
+            <Route path="/areas/hemelhempstead" element={<HemelHempStead />} />
+            <Route path="/areas/cheshunt" element={<Cheshunt />} />
+            <Route path="/areas/codicote" element={<Codicote />} />
+            <Route path="/areas/londoncolney" element={<LondonColney />} />
+            <Route path="/areas/kingslangley" element={<KingsLangley />} />
+            <Route path="/areas/wheathampstead" element={<WheatHampstead />} />
+            <Route path="/areas/abbotslangley" element={<AbbotsLangley />} />
+            <Route path="/areas/broxbourne" element={<Broxbourne />} />
+            <Route path="/areas/borehamwood" element={<Borehamwood />} />
+            <Route path="/areas/southmimms" element={<SouthMimms />} />
+            <Route path="/areas/cuffley" element={<Cuffley />} />
+            <Route path="/areas/ware" element={<Ware />} />
+            <Route path="/areas/hatfield" element={<Hatfield />} />
+            <Route path="/areas/potters-bar" element={<PottersBar />} />
+            <Route path="/areas/ilford" element={<Ilford />} />
+            <Route path="/areas/edmonton" element={<Edmonton />} />
+            <Route path="/areas/wangsted" element={<Wangsted />} />
+            <Route path="/areas/chingford" element={<Chingford />} />
+            <Route path="/areas/woodford-green" element={<WoodfordGreen />} />
+            <Route path="/areas/barnet" element={<Barnet />} />
+            <Route path="/areas/woodgreen" element={<Woodgreen />} />
+            <Route path="/areas/hoddesdon" element={<Hoddesdon />} />
+            {/* Blog */}
+            <Route
+              path="/blogs/tips-tor-choosing-the-right-mobile-tyre-fitting-service"
+              element={<Blog1 />}
+            />
+          </Routes>
+        </CanonicalProvider>
         <div className="whatsapp__icon">
           <a href="https://wa.me/+447441427933">
             <i class="fa-brands fa-whatsapp"></i>

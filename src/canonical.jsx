@@ -9,7 +9,7 @@ export const CanonicalProvider = ({ children }) => {
 
   useEffect(() => {
     // Set the default canonical URL here if needed
-    setCanonicalUrl("https://yourdomain.com/");
+    setCanonicalUrl("https://protyrefitters.co.uk//");
   }, []);
 
   return (

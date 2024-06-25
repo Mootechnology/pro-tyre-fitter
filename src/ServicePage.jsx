@@ -28,7 +28,8 @@ const ServicePage = ({ pageTitle, ...otherProps }) => {
     scardTwo,
     scardThree,
     ctaText,
-    bannerSubHeading
+    bannerSubHeading,
+    pageName
   } = otherProps;
 
   return (
@@ -43,7 +44,7 @@ const ServicePage = ({ pageTitle, ...otherProps }) => {
           <Link to="/" className="linkStyle">
             <i class="fa-solid fa-house"></i> Home{" "}
           </Link>{" "}
-          | {pageTitle}
+          | {pageName}
         </h5>
       </header>
 

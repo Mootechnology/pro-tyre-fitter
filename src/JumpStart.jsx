@@ -51,7 +51,8 @@ const JumpStart = () => {
         imgFour="/images/jumpstart/Serve you at your designated location.png"
         imgFive="/images/jumpstart/Jumpstart service at your desired location.png"
         // Text
-        pageTitle="Jumpstart"
+        pageTitle="Restart your depleted battery with Jumpstart service"
+        pageName="Jump Start"
         headingOne="Rescue your vehicle's battery with jumpstart service"
         headingTwo="Expeditious jumpstart car service "
         headingThree="Quick fix with jumpstart service near me "
@@ -80,7 +81,7 @@ const JumpStart = () => {
         scardTwo="Prioritise your safety         "
         scardThree="Serve you at your designated location"
         ctaText={ctaText}
-        bannerSubHeading="Restart your depleted battery with Jumpstart service. Cover our professional emergency in 30 to 40 minutes"
+        bannerSubHeading="Cover our professional emergency in 30 to 40 minutes"
       />
     </>
   );

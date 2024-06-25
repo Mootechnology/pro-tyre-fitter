@@ -53,7 +53,8 @@ const PartWornTyre = () => {
         imgFour="/images/pwt2(3).png"
         imgFive="/images/pwt3.png"
         // Text
-        pageTitle="Part Worn"
+        pageTitle="Replace your damaged tyre with a part worn tyre"
+        pageName="Part Worn Tyre"
         headingOne="Experience our part-worn tyres service"
         headingThree="Manage emergencies with part worn tyres near me"
         headingTwo="Inexpensive used tyres near me"
@@ -71,7 +72,7 @@ const PartWornTyre = () => {
         scardTwo="Finest part worn tyres"
         scardThree="24/7 available anywhere, anytime"
         ctaText={ctaText}
-        bannerSubHeading="Replace your damaged tyre with a part worn tyre. Best service at your desired location without time and place restrictions"
+        bannerSubHeading="Best service at your desired location without time and place restrictions"
      /> 
     </>
   )

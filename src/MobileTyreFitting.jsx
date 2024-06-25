@@ -38,13 +38,9 @@ const location = useLocation();
     <>
       <Helmet>
         <title id="meta-title">London’s On-Demand Mobile Tyre Fitting Service | Book Now</title>
-        <meta
-          name="description"
-          id="meta-description"
-          content="Don’t waste time searching for a car tyre fitting shop—our professional mobile service comes to you! Get back on the road Fastly."
-        />
-        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/services/mobile-tyre-fitting" />
+        <meta name="description" id="meta-description" content="Don’t waste time searching for a car tyre fitting shop—our professional mobile service comes to you! Get back on the road Fastly."/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <ServicePage
         // Images

@@ -47,13 +47,9 @@ function BlogPage() {
     <div>
       <Helmet>
         <title id='meta-title'>Car Care Insights: Top Tips & Advice for Vehicle Owners</title>
-        <meta
-          name="description"
-          id='meta-description'
-          content="Explore our blog for expert car care tips, maintenance advice, and repair guides. Stay updated with the latest insights to keep your vehicle in top condition."
-        />
-        <meta name="robots" content="noindex, unfollow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/blogs" />
+        <meta name="description" id='meta-description' content="Explore our blog for expert car care tips, maintenance advice, and repair guides. Stay updated with the latest insights to keep your vehicle in top condition."/>
+        <meta name="robots" content="noindex, unfollow" />
       </Helmet>
       {/* Banner Section */}
       <header className='headerStyle blog_banner'>

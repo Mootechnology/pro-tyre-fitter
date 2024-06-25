@@ -35,13 +35,9 @@ const FlatTyre = () => {
     <>
       <Helmet>
         <title id="meta-title">Solve Your Car Troubles with Our Reliable Flat Tyre Repair Services</title>
-        <meta
-          name="description"
-          id="meta-description"
-          content="Expert flat tyre repair in London. Trust our experienced technicians to fix your car troubles in no time. Contact us today!"
-        />
-        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/services/flat-tyre" />
+        <meta name="description" id="meta-description" content="Expert flat tyre repair in London. Trust our experienced technicians to fix your car troubles in no time. Contact us today!"/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <ServicePage
         // Images

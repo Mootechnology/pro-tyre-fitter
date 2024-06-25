@@ -37,16 +37,10 @@ export default function WithContactForm() {
   return (
     <>
       <Helmet>
-        <title id="meta-title">
-          Frequently Asked Questions - Tyre Services in London
-        </title>
-        <meta
-          name="description"
-          id="meta-description"
-          content="Find answers to common queries about our tyre services in London. From fitting to repair, get all the information you need in our FAQs section."
-        />
-        <meta name="robots" content="index, follow" />
+        <title id="meta-title">Frequently Asked Questions - Tyre Services in London</title>
         <link rel="canonical" href="https://protyrefitters.co.uk/faqs" />
+        <meta name="description" id="meta-description" content="Find answers to common queries about our tyre services in London. From fitting to repair, get all the information you need in our FAQs section."/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       {/* Banner Section */}
       <header className="headerStyle">

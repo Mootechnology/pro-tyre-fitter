@@ -34,13 +34,9 @@ const LocknutWheel = () => {
     <>
       <Helmet>
         <title id="meta-title">Locking Wheel Nut Removal - Fast, Professional Service</title>
-        <meta
-          name="description"
-          id="meta-description"
-          content="Get 100% guaranteed locking wheel nut removal with our expert technicians. Rely on our fast and professional service to get your wheels off and back on the road quickly."
-        />
-        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/services/locknut-wheel-removal" />
+        <meta name="description" id="meta-description" content="Get 100% guaranteed locking wheel nut removal with our expert technicians. Rely on our fast and professional service to get your wheels off and back on the road quickly."/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <ServicePage
         // Images

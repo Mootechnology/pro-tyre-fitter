@@ -37,13 +37,9 @@ function About() {
     <div>
       <Helmet>
         <title id="meta-title">Expert Tyre Services in London - Tyre Fitting, Repair & More</title>
-        <meta
-          name="description"
-          id="meta-description"
-          content="Discover our comprehensive tyre services in London, including fitting, repair, replacement, and more. Trust our expertise for all your tyre needs."
-        />
-        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/about" />
+        <meta name="description" id="meta-description" content="Discover our comprehensive tyre services in London, including fitting, repair, replacement, and more. Trust our expertise for all your tyre needs."/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       {/* Banner Section */}
       <header className="headerStyle about-header" style={{ backgroundImage: `url(${BG})` }}>

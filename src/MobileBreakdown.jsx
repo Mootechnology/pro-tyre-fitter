@@ -38,13 +38,9 @@ const MobileBreakdown = () => {
     <>
       <Helmet>
         <title id="meta-title">Find Affordable Breakdown Recovery Services Near You - Call now</title>
-        <meta
-          name="description"
-          id="meta-description"
-          content="Looking for reliable and affordable breakdown recovery services? Look no further! Pro Tyre Fitters provides top-notch assistance. Call Us Now"
-        />
-        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/services/mobile-breakdown" />
+        <meta name="description" id="meta-description" content="Looking for reliable and affordable breakdown recovery services? Look no further! Pro Tyre Fitters provides top-notch assistance. Call Us Now"/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <ServicePage
         // Images

@@ -34,13 +34,10 @@ const JumpStart = () => {
   return (
     <>
       <Helmet>
-        <title>Quick Jump Start Car Service - Available 24/7 Near You</title>
-        <meta
-          name="description"
-          content="Need a jump start? Our 24/7 car service provides fast and reliable jump starts to get you back on the road quickly. Call us anytime for immediate help!"
-        />
-        <meta name="robots" content="index, follow" />
+        <title id="meta-title">Quick Jump Start Car Service - Available 24/7 Near You</title>
         <link rel="canonical" href="https://protyrefitters.co.uk/services/jumpstart" />
+        <meta name="description" id="meta-description" content="Need a jump start? Our 24/7 car service provides fast and reliable jump starts to get you back on the road quickly. Call us anytime for immediate help!"/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <ServicePage
         // Images

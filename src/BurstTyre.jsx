@@ -37,13 +37,9 @@ const BurstTyre = () => {
     <>
       <Helmet>
         <title id="meta-title">Fix Burst Tyres Now - Call for Fast & Reliable Service!</title>
-        <meta
-          name="description"
-          id="meta-description"
-          content="Get immediate assistance for burst tyres. Fast, reliable service available 24/7 to get you back on the road quickly and safely. Call us now!"
-        />
-        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/services/burst-tyre" />
+        <meta name="description" id="meta-description" content="Get immediate assistance for burst tyres. Fast, reliable service available 24/7 to get you back on the road quickly and safely. Call us now!"/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <ServicePage
         // Images

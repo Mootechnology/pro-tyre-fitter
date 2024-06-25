@@ -9,7 +9,7 @@ import four from "../assets/images/4.png";
 import five from "../assets/images/5.png";
 import six from "../assets/images/6.png";
 
-function Navbar() {
+function Navbar({ activeClassName, ...props }) {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const [scrollBackground, setScrollBackground] = useState(false); // State to track scroll background color
   const [showTopHeader, setShowTopHeader] = useState(true); // State to track if Topheader should be displayed
@@ -280,7 +280,7 @@ function Navbar() {
                       <NavLink
                         to="/"
                         className="nav-item nav-link"
-                        activeClassName="active"
+                        exact activeClassName="active"
                       >
                         Home
                       </NavLink>

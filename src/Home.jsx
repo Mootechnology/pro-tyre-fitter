@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import CarouselPage from "./components/CarouselPage";
+// import CarouselPage from "./components/CarouselPage";
 import { Container, Row, Col } from "react-bootstrap";
 import Cards from "./components/Cards";
 import Testimonial from "./components/Testimonial";
@@ -50,7 +50,6 @@ const Home = () => {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/" />
       </Helmet>
-      {/* <CarouselPage /> */}
 
       <section className="ptf-hero fix-img">
         <div className="container">

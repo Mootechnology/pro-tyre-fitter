@@ -36,7 +36,7 @@ const Testimonial = () => {
           
           <Container>
         <Row>
-          <Col md={6}>
+          <Col md={12}>
             <h5>Rating</h5>
             <div style={{color: 'white'}}>
               <span style={{color: 'black'}}>4.5</span>
@@ -47,17 +47,6 @@ const Testimonial = () => {
               <i class="fa-regular fa-star-half-stroke bg-success p-1"></i>
             </div>
           </Col>
-          <Col md={6}>
-            <h5>Google Rating</h5>
-            <div style={{color: 'gold'}}>
-              <span style={{color: 'black'}}>5</span>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </Col>
         </Row>
       </Container>
         
@@ -65,7 +54,7 @@ const Testimonial = () => {
       </MDBRow>
       <MDBContainer className="py-5">
         <MDBRow className="text-center">
-          <MDBCol md="4" className="mb-5 mb-md-0">
+          <MDBCol md="4" className="mb-5 mb-md-0 card">
             {/* <div className="d-flex justify-content-center mb-4">
               <img
                 src={emma}
@@ -106,7 +95,7 @@ const Testimonial = () => {
               </li>
             </MDBTypography>
           </MDBCol>
-          <MDBCol md="4" className="mb-5 mb-md-0">
+          <MDBCol md="4" className="mb-5 mb-md-0 card">
             {/* <div className="d-flex justify-content-center mb-4">
               <img
                 src={maria}
@@ -142,7 +131,7 @@ const Testimonial = () => {
               </li>
             </MDBTypography>
           </MDBCol>
-          <MDBCol md="4" className="mb-5 mb-md-0">
+          <MDBCol md="4" className="mb-5 mb-md-0 card">
             {/* <div className="d-flex justify-content-center mb-4">
               <img
                 src={john}
@@ -178,7 +167,25 @@ const Testimonial = () => {
               </li>
             </MDBTypography>
           </MDBCol>
+
+          <Container className="mt-4">
+          <Row>
+            <Col md={12}>
+              <h5>Google Rating</h5>
+              <div style={{color: 'gold'}}>
+                <span style={{color: 'black'}}>5</span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+
         </MDBRow>
+        
       </MDBContainer>
     </>
   );

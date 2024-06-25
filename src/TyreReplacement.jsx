@@ -2,8 +2,16 @@ import React, {useEffect} from 'react'
 import ServicePage from './ServicePage'
 import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
+import { useCanonical } from "./canonical";
 
 const TyreReplacement = () => {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/services/part-worn-tyre");
+  }, [setCanonicalUrl]);
+
+
   const paraOne = (<>You face the tyre problem, again and again, destroying the work's essence. We know that a damaged or weak tyre can be a problem for you while travelling, causing you to stop driving and strain. A damaged vehicle causes you to be late at your destination or miss your event. It disrupts the daily travel or business schedule. To remove all obstacles between you and your destination, Pro Tyre Fitters offers a mobile tyre replacement service that changes your damaged and <Link to='../services/part-worn-tyre'>Part worn tyres</Link> with new tyres and ensures that the journey is non-problematic.</>)
   const paraTwo = (<>Why do you need a Tyre replacement near me? An unhealthy tyre can lead to unpleasant incidents, such as accidents that damage you and your vehicle. You need to replace the tyre in case of <Link to='../services/burst-tyre'>burst tyres</Link>, punctures, <Link to='../services/flat-tyre'>flat tyres</Link>, deep cuts, or ageing when it has completed more of its life span. The tyre will be replaced in case of a manufacturing problem that causes the tyre to go out of balance and cause frequent air leaks. The recurrence of tyre-related problems puts an unexpected burden on you and disturbs your mood.</>)
 

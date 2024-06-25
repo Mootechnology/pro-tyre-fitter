@@ -2,8 +2,15 @@ import React, {useEffect} from 'react'
 import ServicePage from './ServicePage'
 import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
+import { useCanonical } from "./canonical";
 
 const PartWornTyre = () => {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/services/part-worn-tyre");
+  }, [setCanonicalUrl]);
+
   const paraOne = (<>If your tyres get weak and damaged, it will trouble you. A weak and damaged tyre causes problems for you that disrupt your daily work routine, make you arrive late at the office, and disrupt your work schedule. <Link to='/'>Pro Tyre Fitters</Link> is a platform that handles all your tyre-related issues and offers the best solutions to help you move freely. We design a part-worn tyres service that replaces your old and damaged tyre with a new one to make your journey safer.</>)
   const paraThree = (<>You need a part worn tyres near me in case of an emergency replacement, puncture or tyre failure. We understand that weak tyres are a hassle for you, which leads to unexpected stress and a burden on your pocket. Part worn tyres are the best option for you in case of emergency <Link to='../services/tyre-replacement'>tyre replacement</Link> when you don't have enough budget for new tyres. These tyres meet your needs and help you resume your journey faster. That reduces your safety concerns and makes your tea easier.</>)
   const ctaText = (<>Call us today for a part-worn service offering the best alternative to new tyres. It quickly solves your weak and damaged tyre problem and gives you a clean and smooth ride. Our professionals test the tyre before recommending it to you. <Link to='/contact'>Contact us today</Link> for part-worn tyre service at your directed location.</>)

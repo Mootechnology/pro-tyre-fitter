@@ -2,8 +2,14 @@ import React, {useEffect} from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
+import { useCanonical } from "./canonical";
 
 const MobileTyreRepair = () => {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/services/mobile-tyre-repair");
+  }, [setCanonicalUrl]);
 
   const paraTwo = (<>The tyre repair service near me offers you the best professionals to serve you at the place you are directed, no matter where you are or what time it is. They arrive at your location to address the issue and provide the best possible solution to resolve it permanently. We aim to provide you with services that make your journey more easier, and we have trained professionals to deal with all types of emergencies anytime and anywhere. They know all the knowledge and good practice to solve <Link to='../services/mobile-tyre/fitting'>tyre problems</Link>.</>)
   const paraThree = (<>Mobile car tyre repair solves the problem of punctures, improper functioning of valves, bursts, minor damage and emergencies. Even maintain and <Link to='../services/tyre-replacement'>replace tyres</Link> to make your journey easier. Most <Link to='../services/part-worn-tyre'>tyre problems</Link> are also caused by uneven air pressure and manufacturing defects in the tyre. As a tyre completes its life span, tyre-related issues also arise. All the problems lead to unexpected events that put you and your vehicle at risk.</>)

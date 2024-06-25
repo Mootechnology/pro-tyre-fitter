@@ -88,30 +88,15 @@ const App = () => {
             <Route path="/faqs" element={<FAQS />} />
             <Route path="/blogs" element={<BlogPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route
-              path="/services/mobile-tyre-fitting"
-              element={<MobileTyreFitting />}
-            />
-            <Route
-              path="/services/mobile-tyre-repair"
-              element={<MobileTyreRepair />}
-            />
-            <Route
-              path="/services/tyre-replacement"
-              element={<TyreReplacement />}
-            />
+            <Route path="/services/mobile-tyre-fitting" element={<MobileTyreFitting />}/>
+            <Route path="/services/mobile-tyre-repair" element={<MobileTyreRepair />}/>
+            <Route path="/services/tyre-replacement" element={<TyreReplacement />}/>
             <Route path="/services/flat-tyre" element={<FlatTyre />} />
             <Route path="/services/burst-tyre" element={<BurstTyre />} />
             <Route path="/services/part-worn-tyre" element={<PartWornTyre />} />
             <Route path="/services/jumpstart" element={<JumpStart />} />
-            <Route
-              path="/services/locknut-wheel-removal"
-              element={<LocknutWheel />}
-            />
-            <Route
-              path="/services/mobile-breakdown"
-              element={<MobileBreakdown />}
-            />
+            <Route path="/services/locknut-wheel-removal" element={<LocknutWheel />}/>
+            <Route path="/services/mobile-breakdown" element={<MobileBreakdown />}/>
             <Route path="*" element={<ErrorPage />} />
             <Route path="/areas/luton" element={<Luton />} />
             <Route path="/areas/st-albans" element={<StAlbans />} />

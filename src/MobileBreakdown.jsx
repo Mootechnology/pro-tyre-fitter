@@ -2,8 +2,15 @@ import React, {useEffect} from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
+import { useCanonical } from "./canonical";
 
 const MobileBreakdown = () => {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/services/mobile-breakdown");
+  }, [setCanonicalUrl]);
+
   const paraOne = (<>When your car gets stuck on the road, it can be stressful. We understand that the sudden stop of the vehicle can be physically, mentally, and financially burdensome. <Link to='/'>Pro Tyre Fitters</Link> is a platform that takes care of the needs of every traveller and provides the best vehicle services. We offer a breakdown recovery service that resolves your vehicle-related issues and helps you resume your journey towards your destination. Our goal is to make your travel easy and memorable.</>)
   const paraTwo = (<>Breakdown recovery service is required in the event of a <Link to='../services/flat-tyre'>flat tyre</Link>, mechanical failure, <Link to='../services/jumpstart'>battery problems</Link>, overheating, brake failure and running out of fuel. Most of the issues appear on the side of the road, causing unexpected stress and causing an unpleasant incident. It creates safety concerns for you and your vehicle. All you need is a breakdown recovery near me that provides you with prompt service on the spot and helps you get out of the situation safely.</>)
 

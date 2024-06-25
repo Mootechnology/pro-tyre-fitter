@@ -2,8 +2,14 @@ import React, { useEffect } from "react";
 import ServicePage from "./ServicePage";
 import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
+import { useCanonical } from "./canonical";
 
 const MobileTyreFitting = () => {
+  const { setCanonicalUrl } = useCanonical();
+
+  useEffect(() => {
+    setCanonicalUrl("https://protyrefitters.co.uk/services/mobile-tyre-fitting");
+  }, [setCanonicalUrl]);
 
 const paraOne = (<>Are you suffering from tyre-related problems that disrupt your life and make it difficult to do your work hassle-free? We understand that a lousy tyre stands between you and your destination. It disrupts your household chores, office work and meetings. To smooth your journey, Pro Tyre Fitters is a platform that designs mobile tyre fitting services that cover most tyre-related issues and make your life easier. It covers the <Link to='../services/flat-tyre'>flat tyre</Link> problem, blowouts, and punctures and balances the wheel. <Link to='../services/tyre-replacement'>Replace old tyres</Link> with new tyres and do tyre maintenance.</>);
 const paraFour = (<>Our professionals provide <Link to='/'>mobile tyre service</Link> at your home door to comfort you; they arrive with a complete toolkit and resolve the tyre-related issue. From the maintenance of the tyre to resolving the problems, they cover all the aspects of the tyre and meet all the needs that make your travel easier. If your tyre is stuck at the office site, it can disturb your working schedule, but no worries; our professional will resolve the issue and help you resume your work quickly.</>)

@@ -52,6 +52,7 @@ import Woodgreen from "./areas/Woodgreen";
 import Hoddesdon from "./areas/Hoddesdon";
 import Blog1 from "./blog1";
 import ErrorPage from "./ErrorPage";
+import { CanonicalProvider } from "./canonical";
 
 const App = () => {
   useEffect(() => {
@@ -76,7 +77,7 @@ const App = () => {
         />
       </Helmet>
       <ScrollToTop smooth color="#18bd9d" />
-            
+
       <Router>
         <Navbar />
         <Routes>
@@ -85,15 +86,33 @@ const App = () => {
           <Route path="/faqs" element={<FAQS />} />
           <Route path="/blogs" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/services/mobile-tyre-fitting" element={<MobileTyreFitting />}/>
-          <Route path="/services/mobile-tyre-repair" element={<MobileTyreRepair />}/>
-          <Route path="/services/tyre-replacement" element={<TyreReplacement />}/>
+          <Route
+            path="/services/mobile-tyre-fitting"
+            element={<MobileTyreFitting />}
+          />
+          <Route
+            path="/services/mobile-tyre-repair"
+            element={<MobileTyreRepair />}
+          />
+          <Route
+            path="/services/tyre-replacement"
+            element={<TyreReplacement />}
+          />
           <Route path="/services/flat-tyre" element={<FlatTyre />} />
           <Route path="/services/burst-tyre" element={<BurstTyre />} />
           <Route path="/services/part-worn-tyre" element={<PartWornTyre />} />
           <Route path="/services/jumpstart" element={<JumpStart />} />
-          <Route path="/services/locknut-wheel-removal" element={<LocknutWheel />}/>
-          <Route path="/services/mobile-breakdown" element={<MobileBreakdown />}/>
+          <Route
+            path="/services/locknut-wheel-removal"
+            element={<LocknutWheel />}
+          />
+          <Route
+            path="/services/mobile-breakdown"
+            element={<MobileBreakdown />}
+          />
+          <Route path="/services/register" element={<RegisterPage />} />
+
+          {/* <Route path="*" element={<Navigate to="/" />} /> */}
           <Route path="*" element={<ErrorPage/>} />
           <Route path="/areas/luton" element={<Luton />} />
           <Route path="/areas/st-albans" element={<StAlbans />} />
@@ -124,7 +143,9 @@ const App = () => {
           <Route path="/blogs/tips-tor-choosing-the-right-mobile-tyre-fitting-service" element={<Blog1 />} />
         </Routes>
         <div className="whatsapp__icon">
-            <a href="https://wa.me/+447441427933"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://wa.me/+447441427933">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
         <Footer />
       </Router>

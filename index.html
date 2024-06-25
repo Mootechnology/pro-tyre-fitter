@@ -22,6 +22,16 @@
     <meta name="robots" content="index, follow" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
+
+    <link rel="canonical" href="https://yourdomain.com/" id="canonical-link" />
+    <script>
+      window.updateCanonical = function (url) {
+        var canonicalLink = document.getElementById("canonical-link");
+        if (canonicalLink) {
+          canonicalLink.setAttribute("href", url);
+        }
+      };
+    </script>
     <link
       rel="shortcut icon"
       href="./public/images/FavIcon.png"
@@ -46,5 +56,8 @@
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.updateCanonical("https://protyrefitters.co.uk/");
+    </script>
   </body>
 </html>

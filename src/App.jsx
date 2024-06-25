@@ -24,7 +24,7 @@ import PartWornTyre from "./PartWornTyre";
 import JumpStart from "./JumpStart";
 import LocknutWheel from "./LocknutWheel";
 import MobileBreakdown from "./MobileBreakdown";
-import RegisterPage from "./register";
+// import RegisterPage from "./register";
 import ScrollToTop from "react-scroll-to-top";
 import Luton from "./areas/Luton";
 import StAlbans from "./areas/StAlbans";
@@ -112,9 +112,6 @@ const App = () => {
               path="/services/mobile-breakdown"
               element={<MobileBreakdown />}
             />
-            <Route path="/services/register" element={<RegisterPage />} />
-
-            {/* <Route path="*" element={<Navigate to="/" />} /> */}
             <Route path="*" element={<ErrorPage />} />
             <Route path="/areas/luton" element={<Luton />} />
             <Route path="/areas/st-albans" element={<StAlbans />} />

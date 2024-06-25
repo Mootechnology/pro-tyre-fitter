@@ -1,41 +1,11 @@
 import React, { useEffect } from "react";
 import ServicePage from "./ServicePage";
-// import { Helmet } from "react-helmet";
-import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import useCanonicalUrl, { useCanonical } from "./canonical";
-// import { MetaTags } from "react-meta-tags";
+import { Link, useLocation } from "react-router-dom";
 
 const BurstTyre = () => {
-  const { setCanonicalUrl } = useCanonical();
-
-  useEffect(() => {
-    setCanonicalUrl("https://yourdomain.com/");
-  }, [setCanonicalUrl]);
-  const paraOne = (
-    <>
-      A burst tyre is one of the most dreaded occurrences that every driver
-      faces once in a lifetime. Burst incidents mostly happen on roadsides,
-      damaging vehicles and causing accidents.{" "}
-      <Link to="/">Pro Tyre Fitters</Link> is a platform that takes care of the
-      passenger; we design the service to cover the tyre burst incident quickly,
-      manage the situation, ensure your safety and provide the best solution to
-      get you to your destination. Our professionals help you resume your travel
-      to your destination and make it smooth and safe.
-    </>
-  );
-  const paraThree = (
-    <>
-      We understand that an unexpected tyre blowout disrupts your day-to-day
-      operations, your daily commute, office work, business schedule, and family
-      and friends meetings. You may arrive late or miss an event or meeting.
-      That can cause you unexpected stress that affects your health and work
-      performance. We provide you with service from well-trained professionals
-      who specialize in{" "}
-      <Link to="../services/mobile-tyre-repair">tyre repair services</Link>.
-      They know all tyre-related problems and possible solutions.
-    </>
-  );
+  const paraOne = (<>A burst tyre is one of the most dreaded occurrences that every driver faces once in a lifetime. Burst incidents mostly happen on roadsides, damaging vehicles and causing accidents. <Link to='/'>Pro Tyre Fitters</Link> is a platform that takes care of the passenger; we design the service to cover the tyre burst incident quickly, manage the situation, ensure your safety and provide the best solution to get you to your destination. Our professionals help you resume your travel to your destination and make it smooth and safe.</>)
+  const paraThree = (<>We understand that an unexpected tyre blowout disrupts your day-to-day operations, your daily commute, office work, business schedule, and family and friends meetings. You may arrive late or miss an event or meeting. That can cause you unexpected stress that affects your health and work performance. We provide you with service from well-trained professionals who specialize in <Link to='../services/mobile-tyre-repair'>tyre repair services</Link>. They know all tyre-related problems and possible solutions.</>)
 
   const location = useLocation();
 
@@ -66,21 +36,11 @@ const BurstTyre = () => {
   return (
     <>
       <Helmet>
-        <title id="meta-title">
-          Fix Burst Tyres Now - Call for Fast & Reliable Service!
-        </title>
-        <meta
-          name="description"
-          id="meta-description"
-          content="Get immediate assistance for burst tyres. Fast, reliable service available 24/7 to get you back on the road quickly and safely. Call us now!"
-        />
+        <title id="meta-title">Fix Burst Tyres Now - Call for Fast & Reliable Service!</title>
+        <link rel="canonical" href="https://protyrefitters.co.uk/services/burst-tyre" />
+        <meta name="description" id="meta-description" content="Get immediate assistance for burst tyres. Fast, reliable service available 24/7 to get you back on the road quickly and safely. Call us now!"/>
         <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://protyrefitters.co.uk/services/burst-tyre"
-        />
       </Helmet>
-
       <ServicePage
         // Images
         mergedHeaderStyle="bt"

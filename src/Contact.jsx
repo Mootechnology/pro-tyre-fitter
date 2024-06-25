@@ -64,16 +64,10 @@ function ContactPage() {
   return (
     <div className="contact-page">
       <Helmet>
-        <title id="meta-title">
-          Contact Us - Expert Tyre Services in London
-        </title>
-        <meta
-          name="description"
-          id="meta-description"
-          content="Get in touch with us for professional tyre services in London. Whether it's fitting, repair, replacement, or more, we've got you covered. Reach out today!"
-        />
-        <meta name="robots" content="index, follow" />
+        <title id="meta-title">Contact Us - Expert Tyre Services in London</title>
         <link rel="canonical" href="https://protyrefitters.co.uk/contact" />
+        <meta name="description" id="meta-description" content="Get in touch with us for professional tyre services in London. Whether it's fitting, repair, replacement, or more, we've got you covered. Reach out today!"/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       {/* Banner Section */}
       {/* <header className="headerStyle" style={{ backgroundImage: "none" }}>

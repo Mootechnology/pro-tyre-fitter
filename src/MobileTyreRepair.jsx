@@ -36,12 +36,9 @@ const MobileTyreRepair = () => {
     <>
       <Helmet>
         <title>Tyre Repair Near Me | Find the Best Tyre Repair Service</title>
-        <meta
-          name="description"
-          content="Need professional tyre repair services near you? Look no further! Expert tyre repair near you in London! Quick and Reliable Service"
-        />
-        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://protyrefitters.co.uk/services/mobile-tyre-repair" />
+        <meta name="description" content="Need professional tyre repair services near you? Look no further! Expert tyre repair near you in London! Quick and Reliable Service"/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <ServicePage
         // Images

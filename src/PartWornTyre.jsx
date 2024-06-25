@@ -35,13 +35,10 @@ const PartWornTyre = () => {
   return (
     <>
           <Helmet>
-        <title>Quality Part Worn Tyres - Affordable & Reliable Options</title>
-        <meta
-          name="description"
-          content="Find top-quality part worn tyres at affordable prices. Reliable, inspected tyres for safe driving. Check our range and save on your next tyre purchase today!"
-        />
-        <meta name="robots" content="index, follow" />
+        <title id="meta-title">Quality Part Worn Tyres - Affordable & Reliable Options</title>
         <link rel="canonical" href="https://protyrefitters.co.uk/services/part-worn-tyre" />
+        <meta name="description" id="meta-description" content="Find top-quality part worn tyres at affordable prices. Reliable, inspected tyres for safe driving. Check our range and save on your next tyre purchase today!"/>
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
      <ServicePage
